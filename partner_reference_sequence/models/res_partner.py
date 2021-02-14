@@ -61,8 +61,9 @@ class ResPartner(models.Model):
             partner.ref = partner.get_default_sequence()
         return super(ResPartner, self).action_unarchive()
 
+    @api.model
     def create(self, vals):
-        partners = super().create(vals)
+        partners = super(ResPartner, self).create(vals)
         # consume sequences after creation
         for partner in partners:
             self.env['ir.sequence'].next_by_code(
