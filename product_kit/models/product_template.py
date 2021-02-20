@@ -15,7 +15,7 @@ class ProductTemplate(models.Model):
     pricing_kit_type = fields.Selection(
         [('global', 'Global'), ('product', 'By Product')], string='Global', default='global')
 
-    def get_kit_price(self) -> float:
+    def get_kit_price(self):
         self.ensure_one()
         kit_component_ids = self.product_component_ids
         if not kit_component_ids:
@@ -25,17 +25,18 @@ class ProductTemplate(models.Model):
             price += kit_component.price_subtotal
         return price
 
-    @api.depends('is_kit', 'product_component_ids')
+    @api.depends('is_kit', 'product_component_ids', 'pricing_kit_type')
     def _compute_kit_price(self):
         for product in self:
-            if not product.is_kit or product.pricing_kit_type == 'global':
-                product.kit_price = 0
+            if not product.is_kit or product.pricing_kit_type != 'global':
+                product.kit_price = product.list_price = 0
                 continue
             product.kit_price = product.list_price = product.get_kit_price()
 
-    @api.onchange('is_kit', 'product_component_ids')
+    @api.onchange('is_kit', 'product_component_ids', 'pricing_kit_type')
     def _onchange_kit(self):
-        self.update({'list_price': self.get_kit_price()})
+        price = 0 if self.pricing_kit_type != 'global' else self.get_kit_price()
+        self.update({'list_price': price})
 
     @api.constrains('product_component_ids', 'is_kit')
     def _constrains_kit(self):
