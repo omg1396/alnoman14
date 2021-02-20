@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- reprocess the inventory that already done -->
+<record id="partner_references_generate" model="ir.actions.server">
+    <field name="name">Generate Reference</field>
+    <field name="model_id" ref="base.model_res_partner"/>
+    <field name="binding_model_id" ref="base.model_res_partner"/>
+    <field name="state">code</field>
+    <field name="code">records.generate_references()</field>
+</record>
+    
+
+</odoo>

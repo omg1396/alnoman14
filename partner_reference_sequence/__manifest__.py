@@ -27,7 +27,8 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'data/sequence.xml'
+        'data/sequence.xml',
+        'actoins/server_actions/generate_references.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
