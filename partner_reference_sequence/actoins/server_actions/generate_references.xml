@@ -6,7 +6,9 @@
     <field name="model_id" ref="base.model_res_partner"/>
     <field name="binding_model_id" ref="base.model_res_partner"/>
     <field name="state">code</field>
-    <field name="code">records.generate_references()</field>
+    <field name="code">
+records.generate_references()
+</field>
 </record>
 
 </odoo>
