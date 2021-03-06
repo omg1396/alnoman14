@@ -4,7 +4,6 @@
     <record id="partner_reference_no_gap_seqeunce" model="ir.sequence">
         <field name="name">Partner Reference</field>
         <field name="code">res.partner.reference</field>
-        <field name="prefix">REF/</field>
         <field name="padding">6</field>
         <field name="implementation">no_gap</field>
         <field name="company_id" eval="False"/>

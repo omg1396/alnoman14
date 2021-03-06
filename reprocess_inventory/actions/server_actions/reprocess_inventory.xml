@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- reprocess the inventory that already done -->
+<record id="reprocess_inventory_after_validation_server_action" model="ir.actions.server">
+    <field name="name">Reprocess</field>
+    <field name="model_id" ref="stock.model_stock_inventory"/>
+    <field name="binding_model_id" ref="stock.model_stock_inventory"/>
+    <field name="state">code</field>
+    <field name="code">records.reset_to_progress()</field>
+</record>
+    
+
+</odoo>

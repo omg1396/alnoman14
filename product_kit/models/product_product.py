@@ -15,11 +15,11 @@ class Product(models.Model):
             price += kit_component.price_subtotal
         return price
 
-    @api.depends('is_kit', 'product_component_ids')
+    @api.depends('is_kit', 'product_component_ids', 'pricing_kit_type')
     def _compute_kit_price(self):
         for product in self:
-            if not product.is_kit or product.pricing_kit_type == 'global':
-                product.kit_price = 0
+            if not product.is_kit or product.pricing_kit_type != 'global':
+                product.kit_price = product.list_price = 0
                 continue
             product.kit_price = product.list_price = product.get_kit_price()
 
@@ -29,6 +29,9 @@ class Product(models.Model):
             if product.is_kit and not product.product_component_ids:
                 raise UserError(_('Please add components for the kit'))
 
-    @api.onchange('is_kit', 'product_component_ids')
+    @api.onchange('is_kit', 'product_component_ids', 'pricing_kit_type')
     def _onchange_kit(self):
-        self.update({'list_price': self.get_kit_price()})
+        if self.pricing_kit_type == 'global':
+            self.update({'list_price': self.get_kit_price()})
+        else:
+            self.update({'list_price': 0})
