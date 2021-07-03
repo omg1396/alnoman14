@@ -12,7 +12,7 @@
                     <field name="is_kit" attrs="{'invisible': [('type','!=','service')]}"/>
                     <field name="pricing_kit_type"  attrs="{'invisible': ['|',('type','!=','service'),('is_kit','=',False)]}"/>
                 </xpath>
-                <xpath expr="//form[1]/sheet[1]/notebook[1]" position="inside">
+                <xpath expr="//notebook" position="inside">
                     <page string="Kit Component" name="kit_components" attrs="{'invisible': [('is_kit','=',False)]}">
                         <group name="kit_components" string="Components">
                             <field name="product_component_ids" nolabel="1">
@@ -24,7 +24,7 @@
                                     <field name="uom_id"/>
                                     <field name="price_unit"/>
                                     <field name="price_subtotal" widget="monetary" options="{'currency_field': 'currency_id'}" sum="Total"/>
-                                
+
                                 </tree>
                             </field>
                         </group>
@@ -43,8 +43,11 @@
         <field name="inherit_id" ref="product.product_template_only_form_view"/>
         <field name="arch" type="xml">
             <data>
-                <xpath expr="//form[1]/sheet[1]/notebook[1]" position="inside">
-                    <field name="is_kit"/>
+<!--                <xpath expr="///field[@name='type']" position="after">-->
+<!--                    <field name="is_kit" attrs="{'invisible': [('type','!=','service')]}"/>-->
+<!--                    <field name="pricing_kit_type"  attrs="{'invisible': ['|',('type','!=','service'),('is_kit','=',False)]}"/>-->
+<!--                </xpath>-->
+                <xpath expr="//notebook" position="inside">
                     <page string="Kit Component" name="kit_components" attrs="{'invisible': [('is_kit','=',False)]}">
                         <group name="kit_components" string="Components">
                             <field name="product_component_ids" nolabel="1">
@@ -56,7 +59,7 @@
                                     <field name="uom_id"/>
                                     <field name="price_unit"/>
                                     <field name="price_subtotal" widget="monetary" options="{'currency_field': 'currency_id'}" sum="Total"/>
-                                
+
                                 </tree>
                             </field>
                         </group>

@@ -17,3 +17,5 @@ class ProductTemplate(models.Model):
         string='Brand',
         help='Select a brand for this product'
     )
+
+

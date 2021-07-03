@@ -8,11 +8,13 @@
             </xpath>
             <xpath expr="//tr[hasclass('border-black')]" position="after">
                 <tr>
-                    <td>Total Discount</td>
-                    <td class="text-right">
-                        <span t-field="doc.amount_discount"
-                              t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'/>
-                    </td>
+                    <t t-if="doc.amount_discount">
+                        <td>Total Discount</td>
+                        <td class="text-right">
+                            <span t-field="doc.amount_discount"
+                                  t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'/>
+                        </td>
+                    </t>
                 </tr>
             </xpath>
         </template>

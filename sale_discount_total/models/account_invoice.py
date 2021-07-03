@@ -146,23 +146,24 @@ class AccountInvoice(models.Model):
     @api.onchange('discount_type', 'discount_rate', 'invoice_line_ids')
     def supply_rate(self):
         for inv in self:
-            if inv.discount_type == 'percent':
-                for line in inv.line_ids:
-                    line.discount = inv.discount_rate
-                    line._onchange_price_subtotal()
-            else:
-                total = discount = 0.0
-                for line in inv.invoice_line_ids:
-                    total += (line.quantity * line.price_unit)
-                if inv.discount_rate != 0:
-                    discount = (inv.discount_rate / total) * 100
+            if inv.discount_rate > 0.0:
+                if inv.discount_type == 'percent':
+                    for line in inv.line_ids:
+                        line.discount = inv.discount_rate
+                        line._onchange_price_subtotal()
                 else:
-                    discount = inv.discount_rate
-                for line in inv.line_ids:
-                    line.discount = discount
-                    line._onchange_price_subtotal()
+                    total = discount = 0.0
+                    for line in inv.invoice_line_ids:
+                        total += (line.quantity * line.price_unit)
+                    if inv.discount_rate != 0:
+                        discount = (inv.discount_rate / total) * 100
+                    else:
+                        discount = inv.discount_rate
+                    for line in inv.line_ids:
+                        line.discount = discount
+                        line._onchange_price_subtotal()
 
-            inv._compute_invoice_taxes_by_group()
+                inv._compute_invoice_taxes_by_group()
     #
 
     def button_dummy(self):

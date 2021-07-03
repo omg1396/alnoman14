@@ -78,6 +78,7 @@
         'views/product_brand_views.xml',
         'views/product_template_views.xml',
         'views/product_product_views.xml',
+        'views/account_move.xml'
         # todo: update report
         # 'reports/sale_report_view.xml',
         # 'reports/account_invoice_report_view.xml',
