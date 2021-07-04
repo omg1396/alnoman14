@@ -32,17 +32,20 @@ class SaleOrder(models.Model):
         """
         Compute the total amounts of the SO.
         """
+     
         for order in self:
-            amount_untaxed = amount_tax = amount_discount = 0.0
+            amount_untaxed = amount_tax = amount_discount = amount_before_discount = amount_discount_total = 0.0
             for line in order.order_line:
-                amount_untaxed += line.price_subtotal
+                amount_discount_total += line.price_subtotal
+                amount_untaxed += line.product_uom_qty * line.price_unit
                 amount_tax += line.price_tax
                 amount_discount += (line.product_uom_qty * line.price_unit * line.discount) / 100
             order.update({
+                # 'amount_before_discount': amount_before_discount,
                 'amount_untaxed': amount_untaxed,
                 'amount_tax': amount_tax,
                 'amount_discount': amount_discount,
-                'amount_total': amount_untaxed + amount_tax,
+                'amount_total': amount_discount_total + amount_tax ,
             })
 
     discount_type = fields.Selection([('percent', 'Percentage'), ('amount', 'Amount')], string='Discount type',
@@ -60,23 +63,27 @@ class SaleOrder(models.Model):
     amount_discount = fields.Monetary(string='Discount', store=True, readonly=True, compute='_amount_all',
                                       digits=dp.get_precision('Account'), track_visibility='always')
 
+    amount_before_discount = fields.Monetary(string='Amount Before Discount', store=True, readonly=True, compute='_amount_all',
+                                      digits=dp.get_precision('Account'), track_visibility='always')
+
     @api.onchange('discount_type', 'discount_rate', 'order_line')
     def supply_rate(self):
 
         for order in self:
-            if order.discount_type == 'percent':
-                for line in order.order_line:
-                    line.discount = order.discount_rate
-            else:
-                total = discount = 0.0
-                for line in order.order_line:
-                    total += round((line.product_uom_qty * line.price_unit))
-                if order.discount_rate != 0:
-                    discount = (order.discount_rate / total) * 100
+            if order.discount_rate > 0.0:
+                if order.discount_type == 'percent':
+                    for line in order.order_line:
+                        line.discount = order.discount_rate
                 else:
-                    discount = order.discount_rate
-                for line in order.order_line:
-                    line.discount = discount
+                    total = discount = 0.0
+                    for line in order.order_line:
+                        total += round((line.product_uom_qty * line.price_unit))
+                    if order.discount_rate != 0:
+                        discount = (order.discount_rate / total) * 100
+                    else:
+                        discount = order.discount_rate
+                    for line in order.order_line:
+                        line.discount = discount
 
     def _prepare_invoice(self, ):
         invoice_vals = super(SaleOrder, self)._prepare_invoice()
