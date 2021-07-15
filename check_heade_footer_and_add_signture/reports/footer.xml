@@ -3,7 +3,7 @@
     <template id="external_layout_boxed_custom" inherit_id="web.external_layout_boxed">
         <!-- footer yes or no -->
         <xpath expr="//div[3]" position="replace">
-            <t t-if="company.is_without_footer_header">
+            <t t-if="o._fields.get('is_without_footer_header',False) and o.is_without_footer_header">
                 <div class="text-center" t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">
                 </div>
             </t>
@@ -25,7 +25,7 @@
         </xpath>
         <!-- header yes or no -->
         <xpath expr="//div[1]" position="replace">
-            <t t-if="company.is_without_footer_header">
+            <t t-if="o._fields.get('is_without_footer_header',False) and o.is_without_footer_header">
                 <div t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
                 </div>
             </t>
@@ -47,17 +47,28 @@
             </div>
         </xpath>
     </template>
-    <!--    add bool field -->
-    <record id="company_custom_inherit_form_view1" model="ir.ui.view">
-        <field name="name">custom.company.inherit1</field>
-        <field name="model">res.company</field>
-        <field name="inherit_id" ref="base.view_company_form"/>
+
+
+    <record id="account_moive_custom_inherit_form_view1" model="ir.ui.view">
+        <field name="name">custom.account.inherit1</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
         <field name="type">form</field>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='name']" position="after">
-                <group>
+            <xpath expr="//field[@name='to_check']" position="after">
                     <field name="is_without_footer_header"/>
-                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="account_payment_custom_inherit_form_view1" model="ir.ui.view">
+        <field name="name">custom.account.payment.inherit1</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_form"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='move_id']" position="after">
+                    <field name="is_without_footer_header"/>
             </xpath>
         </field>
     </record>
