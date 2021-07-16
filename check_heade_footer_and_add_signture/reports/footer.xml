@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="external_layout_boxed_custom" inherit_id="web.external_layout_boxed">
+        <!-- footer yes or no -->
+        <xpath expr="//div[3]" position="replace">
+            <t t-if="o._fields.get('is_without_footer_header',False) and o.is_without_footer_header">
+                <div class="text-center" t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">
+                </div>
+            </t>
+            <div t-attf-class="footer o_boxed_footer o_company_#{company.id}_layout">
+                <div class="text-center">
+                    <ul class="list-inline">
+                        <li t-if="company.phone" class="list-inline-item"><span class="o_force_ltr" t-field="company.phone"/></li>
+                        <li t-if="company.email" class="list-inline-item"><span t-field="company.email"/></li>
+                        <li t-if="company.website" class="list-inline-item"><span t-field="company.website"/></li>
+                        <li t-if="company.vat" class="list-inline-item"><t
+                                t-esc="company.country_id.vat_label or 'Tax ID'"/>: <span t-field="company.vat"/></li>
+                    </ul>
+                    <div t-field="company.report_footer"/>
+                    <div t-if="report_type == 'pdf'">
+                        Page: <span class="page"/> / <span class="topage"/>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+        <!-- header yes or no -->
+        <xpath expr="//div[1]" position="replace">
+            <t t-if="o._fields.get('is_without_footer_header',False) and o.is_without_footer_header">
+                <div t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
+                </div>
+            </t>
+            <div t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
+                <div class="o_boxed_header">
+                    <div class="row mb8">
+                        <div class="col-6">
+                            <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" alt="Logo"/>
+                        </div>
+                        <div class="col-6 text-right mb4">
+                            <h4 class="mt0" t-field="company.report_header"/>
+                            <div name="company_address" class="float-right mb4">
+                                <span class="company_address" t-field="company.partner_id"
+                                      t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": true}'/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+
+    <record id="account_moive_custom_inherit_form_view1" model="ir.ui.view">
+        <field name="name">custom.account.inherit1</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='to_check']" position="after">
+                    <field name="is_without_footer_header"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="account_payment_custom_inherit_form_view1" model="ir.ui.view">
+        <field name="name">custom.account.payment.inherit1</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_form"/>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='move_id']" position="after">
+                    <field name="is_without_footer_header"/>
+            </xpath>
+        </field>
+    </record>
+    <!--   end boolean field-->
+</odoo>

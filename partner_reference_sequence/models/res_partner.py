@@ -69,3 +69,12 @@ class ResPartner(models.Model):
             self.env['ir.sequence'].next_by_code(
                 'res.partner.reference')
         return partners
+
+    def generate_references(self):
+        """generate sequences for partners.
+        """
+        partners_without_reference = self.sudo().filtered(
+            lambda p: not p.ref).sorted(lambda partner: partner.id)
+        for partner_without_sequence in partners_without_reference:
+            partner_without_sequence.ref = self.env['ir.sequence'].next_by_code(
+                'res.partner.reference')

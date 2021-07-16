@@ -1,0 +1,13 @@
+<odoo>
+    <!-- override payment record report-->
+    <record id="account.action_report_payment_receipt" model="ir.actions.report">
+        <field name="name">Payment Receipt</field>
+        <field name="model">account.payment</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">account.report_payment_receipt</field>
+        <field name="report_file">account.report_payment_receipt</field>
+        <field name="paperformat_id" ref="check_heade_footer_and_add_signture.paperformat_payment1_report11"/>
+        <field name="binding_model_id" ref="account.model_account_payment"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
