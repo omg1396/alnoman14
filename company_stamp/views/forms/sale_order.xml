@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- sale inherit form view -->
+    <record id="sale_order_stamp_view_id" model="ir.ui.view">
+        <field name="name">sale.inherit.view.form.stamp</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='team_id']" position="after">
+                <field name="print_stamp" groups="company_stamp.group_stamp_print"/>
+            </xpath>            
+        </field>
+    </record>
+
+</odoo>

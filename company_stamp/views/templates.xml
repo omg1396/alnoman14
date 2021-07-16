@@ -1,0 +1,101 @@
+<odoo>
+    <data>
+
+        <template id="quotation_report_add_stamp" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//div[@id='total']/div/table" position="after">
+                <div t-if="doc.company_id.stamp_pic  and doc.print_stamp" name="stamp"
+                     style="position:relative;right:160px;bottom:94px;">
+                    <div>
+                        <strong>Stamp</strong>
+                        <img t-att-src="image_data_uri(doc.company_id.stamp_pic)"
+                             style="max-height: 4cm; max-width: 8cm;"/>
+                    </div>
+                </div>
+            </xpath>
+
+            <xpath expr="//div[hasclass('page')]//div[@id='informations']//div[@t-if='doc.user_id.name']" position="replace">
+            </xpath>
+
+            <xpath expr="//div[@name='so_total_summary']" position="after"><br/><br/>
+                 <div t-if="doc.user_id.name" style="direction:rtl;" class="text-right">
+                    <strong>إسم المستخدم : </strong>
+                    &#160;<strong t-field="doc.user_id"/>
+                </div><br/>
+                <div t-if="doc.user_id.stamp_pic  and doc.print_stamp" name="stamp"
+                      class="text-right" style="direction:rtl;">
+                    <div>
+                        <strong>التوقيع :</strong>
+                        &#160;<img t-att-src="image_data_uri(doc.user_id.stamp_pic)"
+                             style="max-height: 4cm; max-width: 8cm;"/>
+                    </div>
+                </div>
+
+            </xpath>
+
+
+        </template>
+
+
+        <template id="invoice_report_add_stamp" inherit_id="account.report_invoice_document">
+            <xpath expr="//div[@id='total']/div/table" position="after">
+                <div t-if="o.company_id.stamp_pic " name="stamp"
+                     style="position:relative;right:160px;bottom:94px;">
+                    <div>
+                        <strong>Stamp</strong>
+                        <img t-att-src="image_data_uri(o.company_id.stamp_pic)"
+                             style="max-height: 4cm; max-width: 8cm;"/>
+                    </div>
+                </div>
+
+                <xpath expr="//div[hasclass('clearfix')]" position="after"><br/><br/>
+                 <div t-if="o.invoice_user_id.name" style="direction:rtl;" class="text-right">
+                    <strong>إسم المستخدم : </strong>
+                    &#160;<strong t-field="o.invoice_user_id"/>
+                </div><br/>
+                <div t-if="o.invoice_user_id.stamp_pic" name="stamp"
+                      class="text-right" style="direction:rtl;">
+                    <div>
+                        <strong>التوقيع :</strong>
+                        &#160;<img t-att-src="image_data_uri(o.invoice_user_id.stamp_pic)"
+                             style="max-height: 4cm; max-width: 8cm;"/>
+                    </div>
+                </div>
+
+            </xpath>
+
+            </xpath>
+
+        </template>
+
+
+        <template id="quotation_po_report_add_stamp" inherit_id="purchase.report_purchasequotation_document">
+            <xpath expr="//table" position="after">
+                <div t-if="o.company_id.stamp_pic  and o.print_stamp" name="stamp">
+                    <div>
+                        <strong>Stamp</strong>
+                        <img t-att-src="image_data_uri(o.company_id.stamp_pic)"
+                             style="max-height: 4cm; max-width: 8cm;"/>
+                    </div>
+                </div>
+            </xpath>
+
+        </template>
+
+
+        <template id="po_report_add_stamp" inherit_id="purchase.report_purchaseorder_document">
+            <xpath expr="//div[@id='total']/div/table" position="after">
+                <div t-if="o.company_id.stamp_pic  and o.print_stamp" name="stamp"
+                     style="position:relative;right:160px;bottom:94px;">
+                    <div>
+                        <strong>Stamp</strong>
+                        <img t-att-src="image_data_uri(o.company_id.stamp_pic)"
+                             style="max-height: 4cm; max-width: 8cm;"/>
+                    </div>
+                </div>
+            </xpath>
+
+        </template>
+
+
+    </data>
+</odoo>
