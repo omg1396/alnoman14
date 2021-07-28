@@ -33,7 +33,7 @@ class MoveCancel(models.TransientModel):
                 if move.state not in ['done', 'cancel']:
                     for ml in move.move_line_ids:
                         ml.product_uom_qty = 0.0
-                    move._do_unreserve()
+                    # move._do_unreserve()
                 siblings_states = (move.move_dest_ids.mapped('move_orig_ids') - move).mapped('state')
                 if move.propagate_cancel:
                     # only cancel the next move if all my siblings are also cancelled
