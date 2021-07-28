@@ -34,15 +34,15 @@ class MoveCancel(models.TransientModel):
                     for ml in move.move_line_ids:
                         ml.product_uom_qty = 0.0
                     # move._do_unreserve()
-                siblings_states = (move.move_dest_ids.mapped('move_orig_ids') - move).mapped('state')
-                if move.propagate_cancel:
-                    # only cancel the next move if all my siblings are also cancelled
-                    if all(state == 'cancel' for state in siblings_states):
-                        move.move_dest_ids._action_cancel()
-                else:
-                    if all(state in ('done', 'cancel') for state in siblings_states):
-                        move.move_dest_ids.write({'procure_method': 'make_to_stock'})
-                        move.move_dest_ids.write({'move_orig_ids': [(3, move.id, 0)]})
+                # siblings_states = (move.move_dest_ids.mapped('move_orig_ids') - move).mapped('state')
+                # if move.propagate_cancel:
+                #     # only cancel the next move if all my siblings are also cancelled
+                #     if all(state == 'cancel' for state in siblings_states):
+                #         move.move_dest_ids._action_cancel()
+                # else:
+                #     if all(state in ('done', 'cancel') for state in siblings_states):
+                #         move.move_dest_ids.write({'procure_method': 'make_to_stock'})
+                #         move.move_dest_ids.write({'move_orig_ids': [(3, move.id, 0)]})
 
                 if orign_state == 'done' and move.location_id.id == inventory_adj_location_id:
                     inv_quant = self.env['stock.quant'].sudo().search(
