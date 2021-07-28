@@ -33,6 +33,8 @@
                                 attrs="{'invisible': [('cancel_move', '=', True)]}"/>
                         <button name="action_cancel" type="object" string="Cancel Move" class="oe_highlight"
                                 attrs="{'invisible': [('delete_move', '=', True)]}"/>
+                        <button name="delete_move_lines" type="object" string="Delete Move lines" class="oe_highlight"
+                                />
                         or
                         <button string="Cancel" class="oe_link" special="cancel" />
                     </footer>

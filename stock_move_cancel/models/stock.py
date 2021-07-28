@@ -16,11 +16,27 @@ class MoveCancel(models.TransientModel):
     delete_move = fields.Boolean(string='Delete selected stock moves and related quants movements.')
     cancel_move = fields.Boolean(string='Cancel selected stock moves and delete related quants movements.')
 
+    def delete_move_lines(self):
+        move_obj = self.env['stock.move']
+        moves = move_obj.browse(self._context.get('active_ids', []))
+        move_lines_ids = moves.mapped('move_line_ids')
+        move_line_query = """
+        DELETE FROM stock_move_line
+        WHERE id in %s ;
+        """
+        self.env.cr.execute(move_line_query,[tuple(move_lines_ids.ids)])
 
+        move_query = """
+                DELETE FROM stock_move
+                WHERE id in %s;
+                """
+        self.env.cr.execute(move_query,[tuple(moves.ids)])
+
+        return True
     
     def action_cancel(self):
         self._action_cancel()
-    
+
     def _action_cancel(self):
         '''if any(move.state == 'done' for move in self):
             raise UserError(_('You cannot cancel a stock move that has been set to \'Done\'.'))'''
@@ -59,7 +75,7 @@ class MoveCancel(models.TransientModel):
                         old_qty = inv_quant[0].quantity
                         inv_quant[0].quantity = old_qty + move.product_uom_qty
                 move.write({'state': 'cancel', 'move_orig_ids': [(5, 0, 0)]})
-        return True
+
 
             # if move.picking_id.state == 'done' or 'confirmed':
             #     pack_op = self.env['stock.move'].sudo().search([('picking_id','=',move.picking_id.id),('product_id','=',move.product_id.id)])
