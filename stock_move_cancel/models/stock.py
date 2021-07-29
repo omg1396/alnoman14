@@ -33,6 +33,19 @@ class MoveCancel(models.TransientModel):
         self.env.cr.execute(move_query,[tuple(moves.ids)])
 
         return True
+
+    def delete_stock_quant(self):
+        move_obj = self.env['stock.quant']
+        moves = move_obj.browse(self._context.get('active_ids', []))
+
+
+        move_query = """
+                DELETE FROM stock_quant
+                WHERE id in %s;
+                """
+        self.env.cr.execute(move_query,[tuple(moves.ids)])
+
+        return True
     
     def action_cancel(self):
         self._action_cancel()

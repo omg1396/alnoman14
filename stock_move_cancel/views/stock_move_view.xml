@@ -35,6 +35,8 @@
                                 attrs="{'invisible': [('delete_move', '=', True)]}"/>
                         <button name="delete_move_lines" type="object" string="Delete Move lines" class="oe_highlight"
                                 />
+                        <button name="delete_stock_quant" type="object" string="Delete stock Quant" class="oe_highlight"
+                                />
                         or
                         <button string="Cancel" class="oe_link" special="cancel" />
                     </footer>
@@ -49,6 +51,15 @@
             <field name="view_mode">form</field>
             <field name="target">new</field>
             <field name="binding_model_id" ref="stock.model_stock_move"/>
+            <field name="view_id" ref="stock_move_cancel.view_order_merge_form_new_1"/>
+        </record>
+    <record id="action_cancel_stock_quant" model="ir.actions.act_window">
+            <field name="name">Delete/Cancel quant</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">stock.move.cancel</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="binding_model_id" ref="stock.model_stock_quant"/>
             <field name="view_id" ref="stock_move_cancel.view_order_merge_form_new_1"/>
         </record>
 
