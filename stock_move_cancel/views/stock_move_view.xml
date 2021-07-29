@@ -37,6 +37,8 @@
                                 />
                         <button name="delete_stock_quant" type="object" string="Delete stock Quant" class="oe_highlight"
                                 />
+                        <button name="available_equal_done" type="object" string="available quantity" class="oe_highlight"
+                                />
                         or
                         <button string="Cancel" class="oe_link" special="cancel" />
                     </footer>

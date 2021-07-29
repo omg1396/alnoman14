@@ -46,6 +46,13 @@ class MoveCancel(models.TransientModel):
         self.env.cr.execute(move_query,[tuple(moves.ids)])
 
         return True
+
+    def available_equal_done(self):
+        move_obj = self.env['stock.quant']
+        moves = move_obj.browse(self._context.get('active_ids', []))
+        for move in moves:
+            if move.quantity == -move.available_quantity:
+                move.available_quantity = move.quantity
     
     def action_cancel(self):
         self._action_cancel()
