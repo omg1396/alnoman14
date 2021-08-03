@@ -13,7 +13,7 @@ class MoveCancel(models.TransientModel):
     _name = 'stock.move.cancel'
     _description = 'Stock move cancel'
 
-    delete_move = fields.Boolean(string='Delete selected stock moves and related quants movements.')
+    delete_move = fields.Boolean(string='Delete selected stock moves and related quants movements.' )
     cancel_move = fields.Boolean(string='Cancel selected stock moves and delete related quants movements.')
 
     def delete_move_lines(self):
