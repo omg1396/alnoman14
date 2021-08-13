@@ -16,7 +16,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','web','account'],
+    'depends': ['base','web','account','sale','purchase'],
 
     # always loaded
     'data': [
@@ -24,6 +24,7 @@
         'reports/payment_custom_report.xml',
         'reports/payment_report_inherit.xml',
         'reports/footer.xml',
+
 
     ],
 }
