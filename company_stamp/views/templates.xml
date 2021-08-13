@@ -32,6 +32,11 @@
 
             </xpath>
 
+            <xpath expr="//th[@name='th_taxes']" position="replace">
+            </xpath>
+            <xpath expr="//td[@name='td_taxes']" position="replace">
+            </xpath>
+
 
         </template>
 
@@ -92,6 +97,11 @@
                              style="max-height: 4cm; max-width: 8cm;"/>
                     </div>
                 </div>
+            </xpath>
+
+            <xpath expr="//th[@name='th_taxes']" position="replace">
+            </xpath>
+            <xpath expr="//td[@name='td_taxes']" position="replace">
             </xpath>
 
         </template>
