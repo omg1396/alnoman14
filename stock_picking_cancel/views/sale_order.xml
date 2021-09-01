@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="sale_order_form" model="ir.ui.view">
+            <field name="name">sale_order_form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//button[@name='action_cancel']" position="after">
+                    <button name="force_cancel" type="object" string="Force Cancel"/>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="action_force_cancel_sale_order" model="ir.actions.server">
+            <field name="name">Force Cancel</field>
+            <field name="model_id" ref="model_sale_order"/>
+            <field name="binding_model_id" ref="sale.model_sale_order"/>
+            <field name="state">code</field>
+            <field name="code">
+                if records:
+                    records.force_cancel()
+            </field>
+        </record>
+    </data>
+</odoo>
