@@ -11,6 +11,9 @@
             <xpath expr="//field[@name='ref']" position="after">
                     <field name="print_stamp" groups="company_stamp.group_stamp_print"/>                
             </xpath>
+
+            <xpath expr="//field[@name='invoice_line_ids']/tree//field[@name='tax_ids']" position="replace">
+            </xpath>
             
         </field>
     </record>

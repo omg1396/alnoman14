@@ -9,7 +9,9 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='user_id']" position="after">
                 <field name="print_stamp" groups="company_stamp.group_stamp_print"/>
-            </xpath>            
+            </xpath>
+             <xpath expr="//field[@name='order_line']/tree//field[@name='taxes_id']" position="replace">
+            </xpath>
         </field>
     </record>
 

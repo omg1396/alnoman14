@@ -31,6 +31,7 @@
         'views/forms/res_company.xml',
         'views/forms/sale_order.xml',
         'views/forms/purchase_order.xml',
+        'views/forms/account_move.xml',
         # 'views/templates.xml',
     ],
     # only loaded in demonstration mode
