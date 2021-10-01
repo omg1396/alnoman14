@@ -138,11 +138,11 @@ li.contact_information_social_icons {
 .business_hours p{
     color: #fff;
 }
-#wrapwrap #top_menu_container li.o_no_autohide_item a.font-weight-bold{
+#wrapwrap #top_menu_container li.ml-lg-auto a.font-weight-bold{
     color: #fff !important;
     font-size: 12px;
 }
-#top_menu_container li.o_no_autohide_item{
+#top_menu_container li.ml-lg-auto{
     list-style: none;
     background: #00aeef;
     border-radius: 5px;
