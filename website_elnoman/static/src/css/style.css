@@ -655,7 +655,7 @@ section.home_service_sec {
     width: 70%;
     margin: auto;
 }
-.o_rtl .owl-carousel.owl-theme.home_products_slider.owl-loaded.owl-drag{
+.o_rtl .owl-carousel.owl-theme.owl-loaded.owl-drag{
     direction: rtl !important;
 }
 .home_products_slider button.owl-dot {
@@ -742,4 +742,101 @@ button.btn.form_btn.btn-lg.login_in_btn, .register_btn, .forget_pass_login {
 .oe_login_buttons .forget_btn_page{
     display: block !important;
     text-align: center;
+}
+.latest_product_title, .product_details_content_title h4{
+    color: #3baff0;
+}
+.latest_product_title img{
+    width: 10%;
+}
+/************************/
+.product_list_grid{
+    padding: 3rem 7rem;
+    border-radius: 40px;
+    box-shadow: 0 0 14px 0 rgb(0 0 0 / 10%);
+    background-color: #fff;
+    margin: 20px 0;
+    height: 330px;
+    transition: all .3s;
+}
+.product_list_grid:hover{
+    padding: 2rem 5rem;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 174, 239, 0.2);
+}
+.product_list_grid h5{
+    text-align: center;
+    color: #22242a !important;
+    margin-top: 20px;
+}
+.product_list_grid:hover h5{
+    display: none;
+}
+.pagination_products {
+  display: inline-block;
+}
+.pagination_products a.active {
+    background: #00aeef;
+    color: #fff;
+}
+.pagination_products a {
+    color: #cecece;
+    float: right;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    background: #f2f2f2;
+    margin: 5px;
+    font-size: 13px;
+}
+.product_details_img{
+    width: 80%;
+}
+.product_details_banner_sec {
+    background-image: url(/website_elnoman/static/src/css/../img/page_bg.png);
+    background-size: 28%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    z-index: 2;
+}
+p.product_details_content_desc_bg {
+    background: #f2f2f2;
+}
+p.product_details_content_desc {
+    font-size: 15px;
+    padding: 1rem;
+    color: #22242a;
+    width: 80%;
+    margin: auto;
+}
+.product_details_content_title h4{
+    margin-bottom: 30px;
+}
+.client_reviews_content_title
+{
+    color: #3baff0;
+    font-weight: 600;
+}
+.client_review_Desc{
+    color:#22242a;
+}
+.elnoman_client_reviews_carousel_content.text-center.mt-5 {
+    width: 60%;
+    margin: auto !important;
+    margin-top: 30px !important;
+    margin-bottom: 4rem !important;
+}
+.elnoman_header_indicators_reviews li.active{
+    background-color:#00aeef;
+}
+.elnoman_header_indicators_reviews li{
+    background-color:#cccccc;
+}
+.elnoman_header_indicators_reviews_rows{
+    background-color: #3baff0;
+}
+.reviews_service_contact_banner_sec{
+    margin-top: -177px;
+    background-position: 100%;
 }
