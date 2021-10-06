@@ -840,3 +840,15 @@ p.product_details_content_desc {
     margin-top: -177px;
     background-position: 100%;
 }
+/***************************************/
+.home_latest_product_img
+{
+    width: 50%;
+}
+.home_latest_product_right
+{
+    float: right;
+}
+.elnoman_header_indicator_latest_product{
+    bottom: -50px !important;
+}

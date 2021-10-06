@@ -197,6 +197,102 @@
                                     </div>
                                 </div>
                             </section>
+                            <section class="oe_structure home_service_sec">
+                                <div class="container">
+                                    <div class="col-12 home_service_container">
+                                        <a href="/products" style="text-decoration: none;"> <h3>شركاؤنا</h3></a>
+                                        <p>وصف دقيق لما يقدمه المحتوي عن موقع النعمان</p>
+                                    </div>
+                                    <div id="elnoman_latest_product_carousel" class="carousel slide" data-ride="carousel">
+                                        <div class="slider_contain">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="build_date_content text-center mt-5">
+                                                                <h5>اسم الجهاز</h5>
+                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة جفاف العين.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <img src="/website_elnoman/static/src/img/product2.png" class="home_latest_product_img d-block img-fluid" alt="..."/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <img src="/website_elnoman/static/src/img/product2.png" class="home_latest_product_img home_latest_product_right d-block img-fluid" alt="..."/>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="build_date_content text-center mt-5">
+                                                                <h5>اسم الجهاز</h5>
+                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة جفاف العين.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="build_date_content text-center mt-5">
+                                                                <h5>اسم الجهاز</h5>
+                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة جفاف العين.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <img src="/website_elnoman/static/src/img/product2.png" class="home_latest_product_img d-block img-fluid" alt="..."/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <img src="/website_elnoman/static/src/img/product2.png" class="home_latest_product_img home_latest_product_right d-block img-fluid" alt="..."/>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="build_date_content text-center mt-5">
+                                                                <h5>اسم الجهاز</h5>
+                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة جفاف العين.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="build_date_content text-center mt-5">
+                                                                <h5>اسم الجهاز</h5>
+                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة جفاف العين.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <img src="/website_elnoman/static/src/img/product2.png" class="home_latest_product_img d-block img-fluid" alt="..."/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <ol class="carousel-indicators elnoman_header_indicators elnoman_header_indicators_reviews elnoman_header_indicator_latest_product">
+                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="0" class="circle active"/>
+                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="1" class="circle"/>
+                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="2" class="circle"/>
+                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="3" class="circle"/>
+                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="4" class="circle"/>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                             <section class="oe_structure home_about_sec">
                                 <div class="container">
                                     <div class="row">
