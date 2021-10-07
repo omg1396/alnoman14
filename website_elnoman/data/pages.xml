@@ -731,11 +731,11 @@
                                                 </div>
                                             </t>
                                         </div>
-<!--                                        <div class="products_pager form-inline justify-content-center mt-3">-->
-<!--                                            <t t-call="website.pager">-->
-<!--                                                <t t-set="_classes">mt-2 ml-md-2</t>-->
-<!--                                            </t>-->
-<!--                                        </div>-->
+                                        <!--                                        <div class="products_pager form-inline justify-content-center mt-3">-->
+                                        <!--                                            <t t-call="website.pager">-->
+                                        <!--                                                <t t-set="_classes">mt-2 ml-md-2</t>-->
+                                        <!--                                            </t>-->
+                                        <!--                                        </div>-->
 
                                         <div class="products_pager form-inline justify-content-center mt-3">
                                             <ul>
@@ -811,47 +811,42 @@
                                         <div class="row mt-5">
                                             <div class="col-md-8">
                                                 <div class="build_date_content">
-                                                    <h5>مقدمة عن MYAH الجديدة</h5>
-                                                    <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس
-                                                        الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة
-                                                        متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على
-                                                        توسيع ممارسة جفاف العين.
+                                                    <h5>مقدمة عن
+                                                        <t t-esc="record.name"/>
+                                                    </h5>
+
+                                                    <p>
+                                                        <t t-esc="record.description"/>
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4 ">
-                                                <img src="/website_elnoman/static/src/img/product.png"
-                                                     class="product_details_img img-fluid"/>
+                                                <img t-att-src="'/web/image/product.template/%s/image_1920' % record.id"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </div>
                                         </div>
                                         <div class="product_details_content mt-5 pt-5">
                                             <div class="product_details_content_title text-center">
-                                                <h4>نظرة عامة على MYAH</h4>
+                                                <h4>نظرة عامة على
+                                                    <t t-esc="record.name"/>
+                                                </h4>
                                             </div>
                                             <div class="text-center">
-                                                <p class="product_details_content_desc product_details_content_desc_bg">
-                                                    قياس الطول المحوري عن طريق قياس التداخل البصري المنخفض التماسك
-                                                </p>
-                                                <p class="product_details_content_desc">منحنيات النمو المعياري للحرب
-                                                    الإلكترونية مع مخططات النسبة المئوية الصديقة للآباء
-                                                </p>
-                                                <p class="product_details_content_desc product_details_content_desc_bg">
-                                                    تقارير التقدم للطول المحوري والانكسار وقوة القرنية الكلية لتقييم
-                                                    فعالية العلاج
-                                                </p>
-                                                <p class="product_details_content_desc">تضاريس القرنية ، بما في ذلك فحص
-                                                    القرنية المخروطية وقياس الحدقة
-                                                </p>
-                                                <p class="product_details_content_desc product_details_content_desc_bg">
-                                                    مجموعة شاملة من أدوات تقييم جفاف العين: تصوير غدة ميبوميان ، وقت
-                                                    تفتيت الدموع غير الغازية ، قياسات ارتفاع الغضروف المفصلي ، تصوير
-                                                    فلوريسئين والتقاط الفيديو
-                                                </p>
-                                                <p class="product_details_content_desc">صديق للمريض مع الالتقاط السريع
-                                                </p>
-                                                <p class="product_details_content_desc product_details_content_desc_bg">
-                                                    مدمج ، موفر للمساحة وسهل التشغيل
-                                                </p>
+                                                <t t-foreach="record.product_properties_ids" t-as="prop">
+<!--                                                    <t t-esc="prop_index/2" />-->
+                                                    <t t-if="(prop_index % 2) == 0">
+                                                        <p class="product_details_content_desc product_details_content_desc_bg">
+                                                           <t t-esc="prop.name"/>
+                                                        </p>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <p class="product_details_content_desc">
+                                                            <t t-esc="prop.name"/>
+                                                        </p>
+                                                    </t>
+                                                    <t t-set="prop_index + 1" />
+                                                </t>
+
                                             </div>
                                         </div>
                                     </div>
@@ -861,8 +856,8 @@
                                         <div class="row">
                                             <div class="offset-md-4 col-md-4">
                                                 <div class="text-center">
-                                                    <img src="/website_elnoman/static/src/img/product.png"
-                                                         class="product_details_img img-fluid mb-5"/>
+                                                    <img t-att-src="'/web/image/product.template/%s/image_1920' % record.id"
+                                                     class="d-block img-fluid" alt="..."/>
                                                     <p>Data collected by Erasmus University, Rotterdam, NL
                                                     </p>
                                                 </div>

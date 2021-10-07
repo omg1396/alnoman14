@@ -1,3 +1,5 @@
+from werkzeug.exceptions import NotFound
+
 from odoo import http, models, fields, _
 from odoo.http import request
 from odoo.addons.website.controllers.main import Website
@@ -63,5 +65,7 @@ class LatestProducts(http.Controller):
         '''/latest_product/<model("product.template"):latest>''',
     ], type='http', auth="public", website=True, sitemap=True)
     def customer_reviews_page_details(self, latest, enable_editor=None, **post):
+        if not latest:
+            raise NotFound()
         return http.request.render('website_elnoman.elnoman_latest_product_details_page',
                                    {'record': latest})
