@@ -22,49 +22,60 @@
                                         <div class="carousel-inner home_header_slider">
                                             <div class="carousel-item active">
                                                 <div class="slider_logo_img">
-                                                    <img src="/website_elnoman/static/src/img/slide1.png" class="d-block img-fluid" alt="..."/>
+                                                    <img src="/website_elnoman/static/src/img/slide1.png"
+                                                         class="d-block img-fluid" alt="..."/>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="slider_logo_img">
-                                                    <img src="/website_elnoman/static/src/img/slide.png" class="d-block img-fluid" alt="..."/>
+                                                    <img src="/website_elnoman/static/src/img/slide.png"
+                                                         class="d-block img-fluid" alt="..."/>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="slider_logo_img">
-                                                    <img src="/website_elnoman/static/src/img/slide2.png" class="d-block img-fluid" alt="..."/>
+                                                    <img src="/website_elnoman/static/src/img/slide2.png"
+                                                         class="d-block img-fluid" alt="..."/>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="slider_logo_img">
-                                                    <img src="/website_elnoman/static/src/img/slide3.png" class="d-block img-fluid" alt="..."/>
+                                                    <img src="/website_elnoman/static/src/img/slide3.png"
+                                                         class="d-block img-fluid" alt="..."/>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="slider_logo_img">
-                                                    <img src="/website_elnoman/static/src/img/slide4.png" class="d-block img-fluid" alt="..."/>
+                                                    <img src="/website_elnoman/static/src/img/slide4.png"
+                                                         class="d-block img-fluid" alt="..."/>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="slider_logo_img">
-                                                    <img src="/website_elnoman/static/src/img/slide5.png" class="d-block img-fluid" alt="..."/>
+                                                    <img src="/website_elnoman/static/src/img/slide5.png"
+                                                         class="d-block img-fluid" alt="..."/>
                                                 </div>
                                                 <div class="home_slider_content">
                                                     <h2>سهوله تصفح المعدات الطبيه !</h2>
-                                                    <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو  عوضاً عن استخدام </p>
+                                                    <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ للأحرف
+                                                        الموجودة في اللغة العربية بدلا من أو عوضاً عن استخدام
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="slider_logo_img">
-                                                    <img src="/website_elnoman/static/src/img/slide6.png" class="d-block img-fluid" alt="..."/>
+                                                    <img src="/website_elnoman/static/src/img/slide6.png"
+                                                         class="d-block img-fluid" alt="..."/>
                                                 </div>
                                             </div>
                                         </div>
-                                        <a class="carousel-control-prev" href="#elnomanCarousel" role="button" data-slide="prev">
+                                        <a class="carousel-control-prev" href="#elnomanCarousel" role="button"
+                                           data-slide="prev">
                                             <span class="carousel-control-next-icon"></span>
                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="carousel-control-next" href="#elnomanCarousel" role="button" data-slide="next">
+                                        <a class="carousel-control-next" href="#elnomanCarousel" role="button"
+                                           data-slide="next">
                                             <span class="carousel-control-prev-icon"></span>
                                             <span class="sr-only">Next</span>
                                         </a>
@@ -84,42 +95,54 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-12 home_service_container">
-                                            <a href="/service" style="text-decoration: none;"><h3>خدماتنا</h3></a>
+                                            <a href="/service" style="text-decoration: none;">
+                                                <h3>خدماتنا</h3>
+                                            </a>
                                             <p>وصف دقيق لما يقدمه المحتوي عن موقع النعمان</p>
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="home_service_grid_container">
-                                                <img src="/website_elnoman/static/src/img/service2.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/service2.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                                 <div class="home_service_grid_content">
                                                     <h5>
                                                         التركيب
                                                     </h5>
                                                     <p>يتم تركيب المعدات بأقصى درجات الأمان والامتثال للمعايير الطبية.
-                                                        هذه مصنوعة من قبل متخصصين المنتجين المدربين بما في ذلك دعم الخدمة.</p>
+                                                        هذه مصنوعة من قبل متخصصين المنتجين المدربين بما في ذلك دعم
+                                                        الخدمة.
+                                                    </p>
                                                 </div>
                                             </div>
 
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="home_service_grid_container">
-                                                <img src="/website_elnoman/static/src/img/service1.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/service1.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                                 <div class="home_service_grid_content">
                                                     <h5>
                                                         التدريب
                                                     </h5>
-                                                    <p>المهندسين المؤهلين / أخصائي المنتج / التطبيق يوفر التدريب على المنتج.</p>
+                                                    <p>المهندسين المؤهلين / أخصائي المنتج / التطبيق يوفر التدريب على
+                                                        المنتج.
+                                                    </p>
                                                 </div>
                                             </div>
 
                                         </div>
                                         <div class="col-lg-4">
                                             <div class="home_service_grid_container">
-                                                <img src="/website_elnoman/static/src/img/service3.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/service3.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                                 <div class="home_service_grid_content">
                                                     <h5>
                                                         خدمة
                                                     </h5>
-                                                    <p>بعد التثبيت ، يتوفر دعم الخدمة لدينا دائمًا لتوفير أقصى قدر من الدعم لك حتى يشعر المستخدم النهائي بالراحة مع المنتجات <المثبتة>      </المثبتة>.</p>
+                                                    <p>بعد التثبيت ، يتوفر دعم الخدمة لدينا دائمًا لتوفير أقصى قدر من
+                                                        الدعم لك حتى يشعر المستخدم النهائي بالراحة مع
+                                                        المنتجات <المثبتة></المثبتة>.
+                                                    </p>
                                                 </div>
                                             </div>
 
@@ -133,65 +156,66 @@
                                         <h3>آراء عملاؤنا المتميزون</h3>
                                         <p>وصف دقيق لما يقدمه المحتوي عن موقع النعمان</p>
                                     </div>
-                                    <div id="elnoman_client_reviews_carousel" class="carousel slide" data-ride="carousel">
+                                    <div id="elnoman_client_reviews_carousel" class="carousel slide"
+                                         data-ride="carousel">
                                         <div class="slider_contain">
                                             <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <div class="elnoman_client_reviews_carousel_content text-center mt-5">
-                                                        <h4 style="font-weight: 900 !important;">أحمد محمد</h4>
-                                                        <p>طبيب متخصص في جراح العيون</p>
-                                                        <p class="client_review_Desc">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو
-                                                            عوضاً </p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <div class="elnoman_client_reviews_carousel_content text-center mt-5">
-                                                        <h4 style="font-weight: 900 !important;">أحمد محمد</h4>
-                                                        <p>طبيب متخصص في جراح العيون</p>
-                                                        <p class="client_review_Desc">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو
-                                                            عوضاً </p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <div class="elnoman_client_reviews_carousel_content text-center mt-5">
-                                                        <h4 style="font-weight: 900 !important;">أحمد محمد</h4>
-                                                        <p>طبيب متخصص في جراح العيون</p>
-                                                        <p class="client_review_Desc">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو
-                                                            عوضاً </p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <div class="elnoman_client_reviews_carousel_content text-center mt-5">
-                                                        <h4 style="font-weight: 900 !important;">أحمد محمد</h4>
-                                                        <p>طبيب متخصص في جراح العيون</p>
-                                                        <p class="client_review_Desc">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو
-                                                            عوضاً </p>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <div class="elnoman_client_reviews_carousel_content text-center mt-5">
-                                                        <h4 style="font-weight: 900 !important;">أحمد محمد</h4>
-                                                        <p>طبيب متخصص في جراح العيون</p>
-                                                        <p class="client_review_Desc">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو
-                                                            عوضاً </p>
-                                                    </div>
-                                                </div>
-
+                                                <t t-set="index" t-value="true"/>
+                                                <t t-foreach="customer_review" t-as="review">
+                                                    <t t-if="index">
+                                                        <div class="carousel-item active">
+                                                            <div class="elnoman_client_reviews_carousel_content text-center mt-5">
+                                                                <h4 style="font-weight: 900 !important;">
+                                                                    <t t-esc="review.name"/>
+                                                                </h4>
+                                                                <p>
+                                                                    <t t-esc="review.job"/>
+                                                                </p>
+                                                                <p class="client_review_Desc">
+                                                                    <t t-esc="review.review"/>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </t>
+                                                    <t t-else="">
+                                                        <div class="carousel-item">
+                                                            <div class="elnoman_client_reviews_carousel_content text-center mt-5">
+                                                                <h4 style="font-weight: 900 !important;">
+                                                                    <t t-esc="review.name"/>
+                                                                </h4>
+                                                                <p>
+                                                                    <t t-esc="review.job"/>
+                                                                </p>
+                                                                <p class="client_review_Desc">
+                                                                    <t t-esc="review.review"/>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </t>
+                                                    <t t-set="index" t-value="false"/>
+                                                </t>
                                             </div>
-                                            <a class="carousel-control-prev elnoman_header_indicators_reviews_rows" href="#elnoman_client_reviews_carousel" role="button" data-slide="prev">
+                                            <a class="carousel-control-prev elnoman_header_indicators_reviews_rows"
+                                               href="#elnoman_client_reviews_carousel" role="button" data-slide="prev">
                                                 <span class="carousel-control-next-icon"></span>
                                                 <span class="sr-only">Previous</span>
                                             </a>
-                                            <a class="carousel-control-next elnoman_header_indicators_reviews_rows" href="#elnoman_client_reviews_carousel" role="button" data-slide="next">
+                                            <a class="carousel-control-next elnoman_header_indicators_reviews_rows"
+                                               href="#elnoman_client_reviews_carousel" role="button" data-slide="next">
                                                 <span class="carousel-control-prev-icon"></span>
                                                 <span class="sr-only">Next</span>
                                             </a>
                                             <ol class="carousel-indicators elnoman_header_indicators elnoman_header_indicators_reviews">
-                                                <li data-target="#elnoman_client_reviews_carousel" data-slide-to="0" class="circle active"/>
-                                                <li data-target="#elnoman_client_reviews_carousel" data-slide-to="1" class="circle"/>
-                                                <li data-target="#elnoman_client_reviews_carousel" data-slide-to="2" class="circle"/>
-                                                <li data-target="#elnoman_client_reviews_carousel" data-slide-to="3" class="circle"/>
-                                                <li data-target="#elnoman_client_reviews_carousel" data-slide-to="4" class="circle"/>
+                                                <li data-target="#elnoman_client_reviews_carousel" data-slide-to="0"
+                                                    class="circle active"/>
+                                                <li data-target="#elnoman_client_reviews_carousel" data-slide-to="1"
+                                                    class="circle"/>
+                                                <li data-target="#elnoman_client_reviews_carousel" data-slide-to="2"
+                                                    class="circle"/>
+                                                <li data-target="#elnoman_client_reviews_carousel" data-slide-to="3"
+                                                    class="circle"/>
+                                                <li data-target="#elnoman_client_reviews_carousel" data-slide-to="4"
+                                                    class="circle"/>
                                             </ol>
                                         </div>
                                     </div>
@@ -200,10 +224,13 @@
                             <section class="oe_structure home_service_sec">
                                 <div class="container">
                                     <div class="col-12 home_service_container">
-                                        <a href="/products" style="text-decoration: none;"> <h3>شركاؤنا</h3></a>
+                                        <a href="/products" style="text-decoration: none;">
+                                            <h3>شركاؤنا</h3>
+                                        </a>
                                         <p>وصف دقيق لما يقدمه المحتوي عن موقع النعمان</p>
                                     </div>
-                                    <div id="elnoman_latest_product_carousel" class="carousel slide" data-ride="carousel">
+                                    <div id="elnoman_latest_product_carousel" class="carousel slide"
+                                         data-ride="carousel">
                                         <div class="slider_contain">
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
@@ -211,55 +238,37 @@
                                                         <div class="col-md-6">
                                                             <div class="build_date_content text-center mt-5">
                                                                 <h5>اسم الجهاز</h5>
-                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة جفاف العين.
+                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر
+                                                                    النظر: القياس الحيوي البصري وتضاريس القرنية وقياس
+                                                                    الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا
+                                                                    أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة
+                                                                    جفاف العين.
                                                                 </p>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
-                                                            <img src="/website_elnoman/static/src/img/product2.png" class="home_latest_product_img d-block img-fluid" alt="..."/>
+                                                            <img src="/website_elnoman/static/src/img/product2.png"
+                                                                 class="home_latest_product_img d-block img-fluid"
+                                                                 alt="..."/>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="carousel-item">
                                                     <div class="row">
                                                         <div class="col-md-6">
-                                                            <img src="/website_elnoman/static/src/img/product2.png" class="home_latest_product_img home_latest_product_right d-block img-fluid" alt="..."/>
+                                                            <img src="/website_elnoman/static/src/img/product2.png"
+                                                                 class="home_latest_product_img home_latest_product_right d-block img-fluid"
+                                                                 alt="..."/>
                                                         </div>
 
                                                         <div class="col-md-6">
                                                             <div class="build_date_content text-center mt-5">
                                                                 <h5>اسم الجهاز</h5>
-                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة جفاف العين.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="build_date_content text-center mt-5">
-                                                                <h5>اسم الجهاز</h5>
-                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة جفاف العين.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <img src="/website_elnoman/static/src/img/product2.png" class="home_latest_product_img d-block img-fluid" alt="..."/>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <img src="/website_elnoman/static/src/img/product2.png" class="home_latest_product_img home_latest_product_right d-block img-fluid" alt="..."/>
-                                                        </div>
-
-                                                        <div class="col-md-6">
-                                                            <div class="build_date_content text-center mt-5">
-                                                                <h5>اسم الجهاز</h5>
-                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة جفاف العين.
+                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر
+                                                                    النظر: القياس الحيوي البصري وتضاريس القرنية وقياس
+                                                                    الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا
+                                                                    أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة
+                                                                    جفاف العين.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -271,23 +280,76 @@
                                                         <div class="col-md-6">
                                                             <div class="build_date_content text-center mt-5">
                                                                 <h5>اسم الجهاز</h5>
-                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة جفاف العين.
+                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر
+                                                                    النظر: القياس الحيوي البصري وتضاريس القرنية وقياس
+                                                                    الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا
+                                                                    أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة
+                                                                    جفاف العين.
                                                                 </p>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
-                                                            <img src="/website_elnoman/static/src/img/product2.png" class="home_latest_product_img d-block img-fluid" alt="..."/>
+                                                            <img src="/website_elnoman/static/src/img/product2.png"
+                                                                 class="home_latest_product_img d-block img-fluid"
+                                                                 alt="..."/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <img src="/website_elnoman/static/src/img/product2.png"
+                                                                 class="home_latest_product_img home_latest_product_right d-block img-fluid"
+                                                                 alt="..."/>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="build_date_content text-center mt-5">
+                                                                <h5>اسم الجهاز</h5>
+                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر
+                                                                    النظر: القياس الحيوي البصري وتضاريس القرنية وقياس
+                                                                    الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا
+                                                                    أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة
+                                                                    جفاف العين.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="build_date_content text-center mt-5">
+                                                                <h5>اسم الجهاز</h5>
+                                                                <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر
+                                                                    النظر: القياس الحيوي البصري وتضاريس القرنية وقياس
+                                                                    الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا
+                                                                    أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة
+                                                                    جفاف العين.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <img src="/website_elnoman/static/src/img/product2.png"
+                                                                 class="home_latest_product_img d-block img-fluid"
+                                                                 alt="..."/>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                             </div>
                                             <ol class="carousel-indicators elnoman_header_indicators elnoman_header_indicators_reviews elnoman_header_indicator_latest_product">
-                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="0" class="circle active"/>
-                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="1" class="circle"/>
-                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="2" class="circle"/>
-                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="3" class="circle"/>
-                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="4" class="circle"/>
+                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="0"
+                                                    class="circle active"/>
+                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="1"
+                                                    class="circle"/>
+                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="2"
+                                                    class="circle"/>
+                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="3"
+                                                    class="circle"/>
+                                                <li data-target="#elnoman_latest_product_carousel" data-slide-to="4"
+                                                    class="circle"/>
                                             </ol>
                                         </div>
                                     </div>
@@ -297,12 +359,21 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-6 home_about_container">
-                                            <p style="width: 70%">تأسست شركة النعمان في سنة 1970 في مدينة طرابلس الغرب ( ليبيا )  تحت اسم بصريات النعمان كشركة وطنية رائدة و متخصصة في تقديم الخدمات البصرية الطبية, بما في ذلك قياس النظر و تصنيع العدسات  الطبية وتجهيز النظارة بنوعيها الطبي والشمسي.</p>
-                                            <p class="mt-5" style="width: 87%">إكتسبت الشركة  خلال عقود مسيرتها الناجحة سمعة طيبة لدى عملائها وزباءنها المقيمين في طرابلس وباقي مناطق ليبيا, ولدى الزائرين الأجانب من كل الجنسيات, بسبب ……….</p>
+                                            <p style="width: 70%">تأسست شركة النعمان في سنة 1970 في مدينة طرابلس الغرب (
+                                                ليبيا ) تحت اسم بصريات النعمان كشركة وطنية رائدة و متخصصة في تقديم
+                                                الخدمات البصرية الطبية, بما في ذلك قياس النظر و تصنيع العدسات الطبية
+                                                وتجهيز النظارة بنوعيها الطبي والشمسي.
+                                            </p>
+                                            <p class="mt-5" style="width: 87%">إكتسبت الشركة خلال عقود مسيرتها الناجحة
+                                                سمعة طيبة لدى عملائها وزباءنها المقيمين في طرابلس وباقي مناطق ليبيا,
+                                                ولدى الزائرين الأجانب من كل الجنسيات, بسبب ……….
+                                            </p>
                                         </div>
                                         <div class="col-md-6 mt-3 text-center home_about_container">
                                             <h2>عن النعمان</h2>
-                                            <p class="mt-3">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو  عوضاً عن استخدام </p>
+                                            <p class="mt-3">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ
+                                                للأحرف الموجودة في اللغة العربية بدلا من أو عوضاً عن استخدام
+                                            </p>
                                             <a href="/about_us" class="home_about_sec_btn">معرفة المزيد</a>
                                         </div>
                                     </div>
@@ -312,49 +383,60 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-12 home_service_container">
-                                            <a href="/products" style="text-decoration: none;"> <h3>شركاؤنا</h3></a>
+                                            <a href="/products" style="text-decoration: none;">
+                                                <h3>شركاؤنا</h3>
+                                            </a>
                                             <p>وصف دقيق لما يقدمه المحتوي عن موقع النعمان</p>
                                         </div>
                                     </div>
                                     <div class="owl-carousel owl-theme home_products_slider">
                                         <div class="item">
-                                            <a target="_blank" href="https://www.businesswire.com/news/home/20150819005306/en/Clarity-Medical-Systems-Adds-Key-Members-to-Executive-Leadership">
-                                                <img src="/website_elnoman/static/src/img/clarity.png" class="d-block img-fluid" alt="..."/>
+                                            <a target="_blank"
+                                               href="https://www.businesswire.com/news/home/20150819005306/en/Clarity-Medical-Systems-Adds-Key-Members-to-Executive-Leadership">
+                                                <img src="/website_elnoman/static/src/img/clarity.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a target="_blank" href="https://www.topconpositioning.com/">
-                                                <img src="/website_elnoman/static/src/img/topcon.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/topcon.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a target="_blank" href="https://www.iridex.com">
-                                                <img src="/website_elnoman/static/src/img/iridex.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/iridex.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a href="https://www.bausch.com">
-                                                <img src="/website_elnoman/static/src/img/health.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/health.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a target="_blank" href="https://www.oculus.de/us/frontpage//">
-                                                <img src="/website_elnoman/static/src/img/oculus.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/oculus.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a target="_blank" href="https://www.ellex.com/">
-                                                <img src="/website_elnoman/static/src/img/ellex.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/ellex.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a target="_blank" href="https://www.technolaspv.com/startpage//">
-                                                <img src="/website_elnoman/static/src/img/las.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/las.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </a>
                                         </div>
                                         <div class="item">
                                             <a target="_blank" href="http://rumex.com">
-                                                <img src="/website_elnoman/static/src/img/rumex.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/rumex.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </a>
                                         </div>
                                     </div>
@@ -366,35 +448,52 @@
                                     <div class="row">
                                         <div class="col-md-12 home_service_container">
                                             <h3>تواصل معنا</h3>
-                                            <p>تواصل مع النعمان </p>
+                                            <p>تواصل مع النعمان</p>
                                         </div>
                                         <div class="col-md-6">
-                                            <form action="/website_form/" method="post" class="s_website_form container-fluid mt32 o_fake_not_editable" enctype="multipart/form-data" data-name="Form Builder" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                                            <form action="/website_form/" method="post"
+                                                  class="s_website_form container-fluid mt32 o_fake_not_editable"
+                                                  enctype="multipart/form-data" data-name="Form Builder"
+                                                  data-model_name="crm.lead" data-success_page="/contactus-thank-you">
                                                 <div class="container">
                                                     <div class="row">
                                                         <div class="col-md-12 contact_us_form_inputs">
                                                             <div class="form-group form-field o_website_form_required_custom">
-                                                                <input type="text" class="form-control o_website_form_input custom_contact_us_form" placeholder="اﻷسم" name="contact_name" required=""/>
+                                                                <input type="text"
+                                                                       class="form-control o_website_form_input custom_contact_us_form"
+                                                                       placeholder="اﻷسم" name="contact_name"
+                                                                       required=""/>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 contact_us_form_inputs">
                                                             <div class="form-group form-field o_website_form_required_custom">
-                                                                <input type="text" class="form-control o_website_form_input custom_contact_us_form" placeholder="الموضوع" name="name" required=""/>
+                                                                <input type="text"
+                                                                       class="form-control o_website_form_input custom_contact_us_form"
+                                                                       placeholder="الموضوع" name="name" required=""/>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 contact_us_form_inputs">
                                                             <div class="form-group form-field o_website_form_custom">
-                                                                <input type="text" class="form-control o_website_form_input custom_contact_us_form" placeholder="رقم الهاتف" name="phone" required=""/>
+                                                                <input type="text"
+                                                                       class="form-control o_website_form_input custom_contact_us_form"
+                                                                       placeholder="رقم الهاتف" name="phone"
+                                                                       required=""/>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 contact_us_form_inputs">
                                                             <div class="form-group form-field o_website_form_custom o_website_form_required_custom">
-                                                                <textarea class="form-control o_website_form_input custom_contact_us_form" rows="7" placeholder="الرساله" name="description" required=""/>
+                                                                <textarea
+                                                                        class="form-control o_website_form_input custom_contact_us_form"
+                                                                        rows="7" placeholder="الرساله"
+                                                                        name="description" required=""/>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <button class="btn form_btn btn-lg o_website_form_send contact_form_btn" data-original-title="" title="" aria-describedby="tooltip307407">ارسال</button>
+                                                        <button class="btn form_btn btn-lg o_website_form_send contact_form_btn"
+                                                                data-original-title="" title=""
+                                                                aria-describedby="tooltip307407">ارسال
+                                                        </button>
                                                     </div>
                                                     <div class="text-center mt-3">
                                                         <span id="o_website_form_result" class="text-danger ml8"/>
@@ -403,7 +502,9 @@
                                             </form>
                                         </div>
                                         <div class="col-md-6 mt-4">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.090620448327!2d13.133653715184321!3d32.86932168094414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8ecfba35226dd%3A0x34b36da79436449!2sHay%20Al%20Andalus%20Municipality!5e0!3m2!1sen!2seg!4v1633087913929!5m2!1sen!2seg" width="600" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.090620448327!2d13.133653715184321!3d32.86932168094414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8ecfba35226dd%3A0x34b36da79436449!2sHay%20Al%20Andalus%20Municipality!5e0!3m2!1sen!2seg!4v1633087913929!5m2!1sen!2seg"
+                                                    width="600" height="320" style="border:0;" allowfullscreen=""
+                                                    loading="lazy"></iframe>
                                         </div>
                                     </div>
 
@@ -436,74 +537,133 @@
                                 <section class="oe_structure service_banner_sec">
                                     <div class="container">
                                         <div style="position: relative;">
-                                            <img src="/website_elnoman/static/src/img/about_us_banner.png" class="d-block img-fluid" alt="..."/>
+                                            <img src="/website_elnoman/static/src/img/about_us_banner.png"
+                                                 class="d-block img-fluid" alt="..."/>
                                             <div class="service_banner_content">
                                                 <h2>عن النعمان</h2>
-                                                <p class="text-center">توفر الشركة أعلى مستويات الجودة و الإحترافية في تقديم خدماتها التخصصية , ابتداءاً من خدمات ما بعد البيع , بما فى دلك التركيب والصيانة وتوفير قطع الغيار ,  وتنضوي جميعها تحت اسم “النعمان” الذي يعني ضمانة الجودة العالية.
+                                                <p class="text-center">توفر الشركة أعلى مستويات الجودة و الإحترافية في
+                                                    تقديم خدماتها التخصصية , ابتداءاً من خدمات ما بعد البيع , بما فى دلك
+                                                    التركيب والصيانة وتوفير قطع الغيار , وتنضوي جميعها تحت اسم “النعمان”
+                                                    الذي يعني ضمانة الجودة العالية.
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-8 mb-5">
                                                 <div class="build_date_content">
-                                                    <h5>تاريخ النشأة </h5>
-                                                    <p>تأسست شركة النعمان في سنة 1970 في مدينة طرابلس الغرب ( ليبيا )  تحت اسم بصريات النعمان ومؤسسها بشير محمد سبيطة كشركة وطنية رائدة و متخصصة في تقديم الخدمات البصرية الطبية, بما في ذلك قياس النظر و تصنيع العدسات  الطبية وتجهيز النظارة بنوعيها الطبي والشمسي.
+                                                    <h5>تاريخ النشأة</h5>
+                                                    <p>تأسست شركة النعمان في سنة 1970 في مدينة طرابلس الغرب ( ليبيا )
+                                                        تحت اسم بصريات النعمان ومؤسسها بشير محمد سبيطة كشركة وطنية رائدة
+                                                        و متخصصة في تقديم الخدمات البصرية الطبية, بما في ذلك قياس النظر
+                                                        و تصنيع العدسات الطبية وتجهيز النظارة بنوعيها الطبي والشمسي.
                                                         <br/>
                                                         <br/>
-                                                        إكتسبت الشركة  خلال عقود مسيرتها الناجحة سمعة طيبة لدى عملائها وزبائنها المقيمين في طرابلس وباقي مناطق ليبيا, ولدى الزائرين الأجانب من كل الجنسيات, بسبب رقي مستوى الخدمات وجودة العدسات والنظارات بالإضافة الى تنافسية الأسعار.
+                                                        إكتسبت الشركة خلال عقود مسيرتها الناجحة سمعة طيبة لدى عملائها
+                                                        وزبائنها المقيمين في طرابلس وباقي مناطق ليبيا, ولدى الزائرين
+                                                        الأجانب من كل الجنسيات, بسبب رقي مستوى الخدمات وجودة العدسات
+                                                        والنظارات بالإضافة الى تنافسية الأسعار.
                                                         <br/>
                                                         <br/>
-                                                        تأسست في العام 2004  شركة مجموعة النعمان للمعدات الطبية كشركة متخصصة فى توفير جميع معدات طب العيون بما فى ذلك اجهزة التعقيم   والادوات الجراحية وعدسات الزرع الداخلية ومستلزمات الشبكية ….. الخ
+                                                        تأسست في العام 2004 شركة مجموعة النعمان للمعدات الطبية كشركة
+                                                        متخصصة فى توفير جميع معدات طب العيون بما فى ذلك اجهزة التعقيم
+                                                        والادوات الجراحية وعدسات الزرع الداخلية ومستلزمات الشبكية …..
+                                                        الخ
                                                         <br/>
                                                         <br/>
-                                                        توفر شركة مجموعة النعمان للمعدات الطبية أحدث وأجود تكنولوجيا طب وجراحة  العيون من اكبر و اكثر الشركات العالمية شهرة وجودة  . مثل شركة توبكن اليابانية, بوش اند لومب  الامريكية , إليكس الاسترالية. اوكلس الالمانية  , تكنولاس الامريكية , ايريديكس الامريكية وشركات اخري , و تعتبر شركة  مجموعة النعمان للمعدات الطبية  الوكيل المعتمد في ليبيا لهدة  الشركات.</p>
+                                                        توفر شركة مجموعة النعمان للمعدات الطبية أحدث وأجود تكنولوجيا طب
+                                                        وجراحة العيون من اكبر و اكثر الشركات العالمية شهرة وجودة . مثل
+                                                        شركة توبكن اليابانية, بوش اند لومب الامريكية , إليكس الاسترالية.
+                                                        اوكلس الالمانية , تكنولاس الامريكية , ايريديكس الامريكية وشركات
+                                                        اخري , و تعتبر شركة مجموعة النعمان للمعدات الطبية الوكيل المعتمد
+                                                        في ليبيا لهدة الشركات.
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="about_owner_img text-center">
-                                                    <img src="/website_elnoman/static/src/img/about_owner.png" class="d-block img-fluid" alt="..."/>
-                                                    <p>المرحوم بشير محمد سبيطة  (1926-2006)</p>
+                                                    <img src="/website_elnoman/static/src/img/about_owner.png"
+                                                         class="d-block img-fluid" alt="..."/>
+                                                    <p>المرحوم بشير محمد سبيطة (1926-2006)</p>
                                                     <h5>مؤسس مجموعة النعمان</h5>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="build_date_content">
                                                     <h5>ما الذي تقدمه شركة النعمان</h5>
-                                                    <p>توفر الشركة أعلى مستويات الجودة و الإحترافية في تقديم خدماتها التخصصية , ابتداءاً من خدمات ما بعد البيع , بما فى دلك التركيب والصيانة وتوفير قطع الغيار ,  وتنضوي جميعها تحت اسم “النعمان” الذي يعني ضمانة الجودة العالية.
+                                                    <p>توفر الشركة أعلى مستويات الجودة و الإحترافية في تقديم خدماتها
+                                                        التخصصية , ابتداءاً من خدمات ما بعد البيع , بما فى دلك التركيب
+                                                        والصيانة وتوفير قطع الغيار , وتنضوي جميعها تحت اسم “النعمان”
+                                                        الذي يعني ضمانة الجودة العالية.
                                                         <br/>
                                                         <br/>
-                                                        توسعت خارطة خدمات الشركة عبر معظم أحياء طرابلس الكبرى وعديد المدن الليبية مثل , الزاوية , صبراتة , مصراته, زليتن , سرت , اجدابيا , بنغازي , المرج , البيضاء, وتسعى الشركة لتوسيع خارطة خدماتها الطبية لتشمل اغلب باقي المدن الرئيسة في ليبيا.
+                                                        توسعت خارطة خدمات الشركة عبر معظم أحياء طرابلس الكبرى وعديد
+                                                        المدن الليبية مثل , الزاوية , صبراتة , مصراته, زليتن , سرت ,
+                                                        اجدابيا , بنغازي , المرج , البيضاء, وتسعى الشركة لتوسيع خارطة
+                                                        خدماتها الطبية لتشمل اغلب باقي المدن الرئيسة في ليبيا.
                                                         <br/>
                                                         <br/>
-                                                        كانت تلك هي الترجمة لرؤية مؤسس المجموعة المرحوم بشير محمد سبيطة المعتمدة على اعتبار ان مهمة وغرض المجموعة الأساسي هو إعطاء الأولوية لجودة الخدمات  الطبية البصرية الرفيعة و مصداقية التعامل وهو ما اكسبها سمعتها العريضة المستحقة لدى زبائنها وعملائها داخل وخارج ليبيا.</p>
+                                                        كانت تلك هي الترجمة لرؤية مؤسس المجموعة المرحوم بشير محمد سبيطة
+                                                        المعتمدة على اعتبار ان مهمة وغرض المجموعة الأساسي هو إعطاء
+                                                        الأولوية لجودة الخدمات الطبية البصرية الرفيعة و مصداقية التعامل
+                                                        وهو ما اكسبها سمعتها العريضة المستحقة لدى زبائنها وعملائها داخل
+                                                        وخارج ليبيا.
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="offset-md-2 col-md-8 my-5">
-                                                <img src="/website_elnoman/static/src/img/about_team.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/about_team.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                                 <p class="text-center">اجتماع توبكون السنوي</p>
                                             </div>
                                             <div class="col-md-12 mb-5">
                                                 <div class="build_date_content">
                                                     <h5>مسيرة شركة النعمان</h5>
-                                                    <p>تأسست شركة النعمان عام 1970 في مدينة طرابلس - ليبيا تحت اسم Elnoman Optics كشركة بصرية وطنية رائدة متخصصة في تقديم الخدمات الطبية البصرية ، بما في ذلك البصريات ، وتصنيع العدسات الطبية وتوفير الطبية والشمس. نظارات بكافة أنواعها وماركات عالمية.
+                                                    <p>تأسست شركة النعمان عام 1970 في مدينة طرابلس - ليبيا تحت اسم
+                                                        Elnoman Optics كشركة بصرية وطنية رائدة متخصصة في تقديم الخدمات
+                                                        الطبية البصرية ، بما في ذلك البصريات ، وتصنيع العدسات الطبية
+                                                        وتوفير الطبية والشمس. نظارات بكافة أنواعها وماركات عالمية.
                                                         <br/>
                                                         <br/>
-                                                        اكتسبت الشركة سمعة ممتازة خلال عقود من عملها الناجح وبنت اسم العلامة التجارية “النعمان” لتصبح مرادفًا لثقة العملاء وخدمة عملاء ممتازة لكل من شركائنا المحليين والدوليين.
+                                                        اكتسبت الشركة سمعة ممتازة خلال عقود من عملها الناجح وبنت اسم
+                                                        العلامة التجارية “النعمان” لتصبح مرادفًا لثقة العملاء وخدمة
+                                                        عملاء ممتازة لكل من شركائنا المحليين والدوليين.
                                                         <br/>
                                                         <br/>
-                                                        تأسست في عام 2004 ، أصبحت مجموعة النعمان للأجهزة الطبية الشركة الأم للعديد من الشركات المتخصصة في مجموعة واسعة من الخدمات الطبية بما في ذلك على سبيل المثال لا الحصر ، معدات العيون وأجهزة التعقيم والأدوات الجراحية وعدسات الزرع الداخلية وملحقات الشبكية ، على سبيل المثال لا الحصر قليلة. تقدم المجموعة أحدث وأعلى جودة تكنولوجيا طب وجراحة العيون من أكبر الشركات العالمية وأكثرها احتراما وإنجازا. تفتخر المجموعة بالتعاون مع Topcon من اليابان ، Baucsh and Lomb من الولايات المتحدة الأمريكية ، Ellex من أستراليا ، Oculus من ألمانيا ، Technolas و Iridex من الولايات المتحدة الأمريكية ، والمجموعة هي الوكيل الرسمي المعتمد لتلك الشركات في ليبيا.</p>
+                                                        تأسست في عام 2004 ، أصبحت مجموعة النعمان للأجهزة الطبية الشركة
+                                                        الأم للعديد من الشركات المتخصصة في مجموعة واسعة من الخدمات
+                                                        الطبية بما في ذلك على سبيل المثال لا الحصر ، معدات العيون وأجهزة
+                                                        التعقيم والأدوات الجراحية وعدسات الزرع الداخلية وملحقات الشبكية
+                                                        ، على سبيل المثال لا الحصر قليلة. تقدم المجموعة أحدث وأعلى جودة
+                                                        تكنولوجيا طب وجراحة العيون من أكبر الشركات العالمية وأكثرها
+                                                        احتراما وإنجازا. تفتخر المجموعة بالتعاون مع Topcon من اليابان ،
+                                                        Baucsh and Lomb من الولايات المتحدة الأمريكية ، Ellex من
+                                                        أستراليا ، Oculus من ألمانيا ، Technolas و Iridex من الولايات
+                                                        المتحدة الأمريكية ، والمجموعة هي الوكيل الرسمي المعتمد لتلك
+                                                        الشركات في ليبيا.
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="build_date_content">
                                                     <h5>انجازات شركة النعمان</h5>
-                                                    <p>كما تقدم الشركات التابعة لمجموعة النعمان أعلى مستويات الجودة والسلوك المهني في تقديم خدماتها المتخصصة ، والتي تتراوح بين خدمات ما بعد البيع والتركيب والصيانة وقطع الغيار. جعل اسم العلامة التجارية النعمان مرادفًا لـ “جودة مضمونة”.
+                                                    <p>كما تقدم الشركات التابعة لمجموعة النعمان أعلى مستويات الجودة
+                                                        والسلوك المهني في تقديم خدماتها المتخصصة ، والتي تتراوح بين
+                                                        خدمات ما بعد البيع والتركيب والصيانة وقطع الغيار. جعل اسم
+                                                        العلامة التجارية النعمان مرادفًا لـ “جودة مضمونة”.
                                                         <br/>
                                                         <br/>
-                                                        امتدت خدمات المجموعة عبر العاصمة طرابلس ، وإلى العديد من المدن الليبية الرئيسية سرت ، أجدابيا ، بنغازي ، المرج ، البيضاء. نواصل توسيع نطاق خدماتنا لتشمل جميع المدن الرئيسية في ليبيا.
+                                                        امتدت خدمات المجموعة عبر العاصمة طرابلس ، وإلى العديد من المدن
+                                                        الليبية الرئيسية سرت ، أجدابيا ، بنغازي ، المرج ، البيضاء. نواصل
+                                                        توسيع نطاق خدماتنا لتشمل جميع المدن الرئيسية في ليبيا.
                                                         <br/>
                                                         <br/>
-                                                        وهذا يعكس تنفيذ رؤية المؤسس الراحل للمجموعة ، الحاج بشير محمد سبيتة ، بناءً على المبادئ التي غرسها في المجموعة والتي ركزت على الجودة العالية وتجربة العملاء الإيجابية بأسعار تنافسية وعادلة. لقد أكسبت هذه المبادئ التأسيسية المجموعة الفخورة سمعة مدوية تتمتع بها حاليًا ، باعتبارها المزود الأول للخدمات بين جميع أصحاب المصلحة.</p>
+                                                        وهذا يعكس تنفيذ رؤية المؤسس الراحل للمجموعة ، الحاج بشير محمد
+                                                        سبيتة ، بناءً على المبادئ التي غرسها في المجموعة والتي ركزت على
+                                                        الجودة العالية وتجربة العملاء الإيجابية بأسعار تنافسية وعادلة.
+                                                        لقد أكسبت هذه المبادئ التأسيسية المجموعة الفخورة سمعة مدوية
+                                                        تتمتع بها حاليًا ، باعتبارها المزود الأول للخدمات بين جميع أصحاب
+                                                        المصلحة.
+                                                    </p>
                                                 </div>
                                             </div>
 
@@ -515,8 +675,10 @@
                                         <div>
                                             <div class="service_content_banner_content">
                                                 <h2>سهوله تصفح المعدات الطبيه !</h2>
-                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو  عوضاً عن استخدام </p>
-                                                <a  href="mailto:info@elnomangroup.com">تواصل معنا</a>
+                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ للأحرف
+                                                    الموجودة في اللغة العربية بدلا من أو عوضاً عن استخدام
+                                                </p>
+                                                <a href="mailto:info@elnomangroup.com">تواصل معنا</a>
                                             </div>
                                         </div>
                                     </div>
@@ -546,130 +708,71 @@
                         <div id="wrap" class="oe_structure oe_website_sale ">
                             <div class="oe_structure">
                                 <section class="oe_structure m-5">
-                                    <div class="container">
+                                    <div class="container" id="latest_products">
                                         <div class="latest_product_title">
                                             <h2>منتجاتنا</h2>
-                                            <img src="/website_elnoman/static/src/img/under_line.png" class="img-fluid" />
+                                            <img src="/website_elnoman/static/src/img/under_line.png"
+                                                 class="img-fluid"/>
                                         </div>
                                         <div class="row mt-5">
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
+                                            <t t-foreach="latest_product" t-as="latest">
+                                                <div class="col-md-4">
+                                                    <div class="product_list_grid">
+                                                        <a t-attf-href="/latest_product/#{latest.id}">
+                                                            <!--                                                            <img src="/website_elnoman/static/src/img/product.png"-->
+                                                            <!--                                                                 class="img-fluid"/>-->
+                                                            <img t-att-src="'/web/image/product.template/%s/image_1920' % latest.id"
+                                                                 class="d-block img-fluid" alt="..."/>
+                                                            <h5>
+                                                                <t t-esc="latest.name"/>
+                                                            </h5>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="product_list_grid">
-                                                    <a href="">
-                                                        <img src="/website_elnoman/static/src/img/product.png" class="img-fluid" />
-                                                        <h5>Product name</h5>
-                                                    </a>
-                                                </div>
-                                            </div>
+                                            </t>
                                         </div>
-                                        <div class="row mt-5">
-                                            <div class="col-md-12 text-center">
-                                                <div class="pagination_products">
-                                                    <a href="#">&gt;&gt;</a>
-                                                    <a href="#" class="active">1</a>
-                                                    <a href="#">2</a>
-                                                    <a href="#">3</a>
-                                                    <a href="#">&lt;&lt;</a>
-                                                </div>
-                                            </div>
+<!--                                        <div class="products_pager form-inline justify-content-center mt-3">-->
+<!--                                            <t t-call="website.pager">-->
+<!--                                                <t t-set="_classes">mt-2 ml-md-2</t>-->
+<!--                                            </t>-->
+<!--                                        </div>-->
+
+                                        <div class="products_pager form-inline justify-content-center mt-3">
+                                            <ul>
+                                                <li t-attf-class="prev #{'active' if pager['page']['num'] == 1 else '' }">
+                                                    <a class="page-link"
+                                                       t-att-href="'/latest_product/page/'+str(previous)"
+                                                       tabindex="-1">Previous
+                                                    </a>
+                                                </li>
+                                                <t t-foreach="range(pager['page_start']['num'], pager['page_end']['num']+1)"
+                                                   t-as="p">
+                                                    <li t-att-class=" 'active' if pager['page']['num'] == p else '' ">
+                                                        <a class="page-link"
+                                                           t-att-href="'/latest_product/page/'+str(p)" t-esc="p">
+                                                            <span class="sr-only">(current)</span>
+                                                        </a>
+                                                    </li>
+                                                </t>
+                                                <li t-attf-class="next #{'active' if pager['page'] == pager['page_end'] else '' }">
+                                                    <a class="page-link"
+                                                       t-att-href="'/latest_product/page/'+str(next)">
+                                                        Next
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-
                                 </section>
                                 <section class="oe_structure service_contact_banner_sec">
                                     <div class="container">
                                         <div>
                                             <div class="service_content_banner_content">
                                                 <h2>سهوله تصفح المعدات الطبيه !</h2>
-                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو  عوضاً عن استخدام </p>
-                                                <a  href="mailto:info@elnomangroup.com">تواصل معنا</a>
+                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ للأحرف
+                                                    الموجودة في اللغة العربية بدلا من أو عوضاً عن استخدام
+                                                </p>
+                                                <a href="mailto:info@elnomangroup.com">تواصل معنا</a>
                                             </div>
                                         </div>
                                     </div>
@@ -693,7 +796,8 @@
             <field name="key">website_elnoman.elnoman_latest_product_details_page</field>
 
             <field name="arch" type="xml">
-                <t name="Latest Product Details Elnoman" priority="10" t-name="website_elnoman.elnoman_latest_product_details_page">
+                <t name="Latest Product Details Elnoman" priority="10"
+                   t-name="website_elnoman.elnoman_latest_product_details_page">
                     <t t-call="website.layout">
                         <div id="wrap" class="oe_structure oe_website_sale ">
                             <div class="oe_structure">
@@ -701,17 +805,23 @@
                                     <div class="container">
                                         <div class="latest_product_title">
                                             <h3>وصل حديثاً</h3>
-                                            <img src="/website_elnoman/static/src/img/under_line.png" class="img-fluid" />
+                                            <img src="/website_elnoman/static/src/img/under_line.png"
+                                                 class="img-fluid"/>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-8">
                                                 <div class="build_date_content">
                                                     <h5>مقدمة عن MYAH الجديدة</h5>
-                                                    <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على توسيع ممارسة جفاف العين.</p>
+                                                    <p>تقدم MYAH التكنولوجيا التي تحتاجها لدعم إدارة قصر النظر: القياس
+                                                        الحيوي البصري وتضاريس القرنية وقياس الحدقة. تتضمن هذه الأداة
+                                                        متعددة الاستخدامات أيضًا أدوات تقييم جفاف العين لمساعدتك على
+                                                        توسيع ممارسة جفاف العين.
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4 ">
-                                                <img src="/website_elnoman/static/src/img/product.png" class="product_details_img img-fluid" />
+                                                <img src="/website_elnoman/static/src/img/product.png"
+                                                     class="product_details_img img-fluid"/>
                                             </div>
                                         </div>
                                         <div class="product_details_content mt-5 pt-5">
@@ -722,15 +832,23 @@
                                                 <p class="product_details_content_desc product_details_content_desc_bg">
                                                     قياس الطول المحوري عن طريق قياس التداخل البصري المنخفض التماسك
                                                 </p>
-                                                <p class="product_details_content_desc">منحنيات النمو المعياري للحرب الإلكترونية مع مخططات النسبة المئوية الصديقة للآباء</p>
-                                                <p class="product_details_content_desc product_details_content_desc_bg">
-                                                    تقارير التقدم للطول المحوري والانكسار وقوة القرنية الكلية لتقييم فعالية العلاج
+                                                <p class="product_details_content_desc">منحنيات النمو المعياري للحرب
+                                                    الإلكترونية مع مخططات النسبة المئوية الصديقة للآباء
                                                 </p>
-                                                <p class="product_details_content_desc">تضاريس القرنية ، بما في ذلك فحص القرنية المخروطية وقياس الحدقة</p>
                                                 <p class="product_details_content_desc product_details_content_desc_bg">
-                                                    مجموعة شاملة من أدوات تقييم جفاف العين: تصوير غدة ميبوميان ، وقت تفتيت الدموع غير الغازية ، قياسات ارتفاع الغضروف المفصلي ، تصوير فلوريسئين والتقاط الفيديو
+                                                    تقارير التقدم للطول المحوري والانكسار وقوة القرنية الكلية لتقييم
+                                                    فعالية العلاج
                                                 </p>
-                                                <p class="product_details_content_desc">صديق للمريض مع الالتقاط السريع</p>
+                                                <p class="product_details_content_desc">تضاريس القرنية ، بما في ذلك فحص
+                                                    القرنية المخروطية وقياس الحدقة
+                                                </p>
+                                                <p class="product_details_content_desc product_details_content_desc_bg">
+                                                    مجموعة شاملة من أدوات تقييم جفاف العين: تصوير غدة ميبوميان ، وقت
+                                                    تفتيت الدموع غير الغازية ، قياسات ارتفاع الغضروف المفصلي ، تصوير
+                                                    فلوريسئين والتقاط الفيديو
+                                                </p>
+                                                <p class="product_details_content_desc">صديق للمريض مع الالتقاط السريع
+                                                </p>
                                                 <p class="product_details_content_desc product_details_content_desc_bg">
                                                     مدمج ، موفر للمساحة وسهل التشغيل
                                                 </p>
@@ -743,7 +861,8 @@
                                         <div class="row">
                                             <div class="offset-md-4 col-md-4">
                                                 <div class="text-center">
-                                                    <img src="/website_elnoman/static/src/img/product.png" class="product_details_img img-fluid mb-5" />
+                                                    <img src="/website_elnoman/static/src/img/product.png"
+                                                         class="product_details_img img-fluid mb-5"/>
                                                     <p>Data collected by Erasmus University, Rotterdam, NL
                                                     </p>
                                                 </div>
@@ -756,8 +875,10 @@
                                         <div>
                                             <div class="service_content_banner_content">
                                                 <h2>سهوله تصفح المعدات الطبيه !</h2>
-                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو  عوضاً عن استخدام </p>
-                                                <a  href="mailto:info@elnomangroup.com">تواصل معنا</a>
+                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ للأحرف
+                                                    الموجودة في اللغة العربية بدلا من أو عوضاً عن استخدام
+                                                </p>
+                                                <a href="mailto:info@elnomangroup.com">تواصل معنا</a>
                                             </div>
                                         </div>
                                     </div>
@@ -789,10 +910,13 @@
                                 <section class="oe_structure service_banner_sec">
                                     <div class="container">
                                         <div style="position: relative;">
-                                            <img src="/website_elnoman/static/src/img/products_banner.png" class="d-block img-fluid" alt="..."/>
+                                            <img src="/website_elnoman/static/src/img/products_banner.png"
+                                                 class="d-block img-fluid" alt="..."/>
                                             <div class="service_banner_content">
                                                 <h2>منتجاتنا</h2>
-                                                <p class="text-center">تقدم شركة نعمان منتجات عالية المستوى لشركات عالمية معروفة لها مسار طويل في طب العيون</p>
+                                                <p class="text-center">تقدم شركة نعمان منتجات عالية المستوى لشركات
+                                                    عالمية معروفة لها مسار طويل في طب العيون
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="row mt-5">
@@ -803,57 +927,66 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="product_client_img">
-                                                    <a target="_blank" href="https://www.businesswire.com/news/home/20150819005306/en/Clarity-Medical-Systems-Adds-Key-Members-to-Executive-Leadership">
-                                                        <img src="/website_elnoman/static/src/img/clarity.png" class="d-block img-fluid" alt="..."/>
+                                                    <a target="_blank"
+                                                       href="https://www.businesswire.com/news/home/20150819005306/en/Clarity-Medical-Systems-Adds-Key-Members-to-Executive-Leadership">
+                                                        <img src="/website_elnoman/static/src/img/clarity.png"
+                                                             class="d-block img-fluid" alt="..."/>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="product_client_img">
                                                     <a target="_blank" href="https://www.topconpositioning.com/">
-                                                        <img src="/website_elnoman/static/src/img/topcon.png" class="d-block img-fluid" alt="..."/>
+                                                        <img src="/website_elnoman/static/src/img/topcon.png"
+                                                             class="d-block img-fluid" alt="..."/>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="product_client_img">
                                                     <a target="_blank" href="https://www.iridex.com">
-                                                        <img src="/website_elnoman/static/src/img/iridex.png" class="d-block img-fluid" alt="..."/>
+                                                        <img src="/website_elnoman/static/src/img/iridex.png"
+                                                             class="d-block img-fluid" alt="..."/>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="product_client_img">
                                                     <a href="https://www.bausch.com">
-                                                        <img src="/website_elnoman/static/src/img/health.png" class="d-block img-fluid" alt="..."/>
+                                                        <img src="/website_elnoman/static/src/img/health.png"
+                                                             class="d-block img-fluid" alt="..."/>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="product_client_img">
                                                     <a target="_blank" href="https://www.oculus.de/us/frontpage//">
-                                                        <img src="/website_elnoman/static/src/img/oculus.png" class="d-block img-fluid" alt="..."/>
+                                                        <img src="/website_elnoman/static/src/img/oculus.png"
+                                                             class="d-block img-fluid" alt="..."/>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="product_client_img">
                                                     <a target="_blank" href="https://www.ellex.com/">
-                                                        <img src="/website_elnoman/static/src/img/ellex.png" class="d-block img-fluid" alt="..."/>
+                                                        <img src="/website_elnoman/static/src/img/ellex.png"
+                                                             class="d-block img-fluid" alt="..."/>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="product_client_img">
                                                     <a target="_blank" href="https://www.technolaspv.com/startpage//">
-                                                        <img src="/website_elnoman/static/src/img/las.png" class="d-block img-fluid" alt="..."/>
+                                                        <img src="/website_elnoman/static/src/img/las.png"
+                                                             class="d-block img-fluid" alt="..."/>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="product_client_img">
                                                     <a target="_blank" href="http://rumex.com">
-                                                        <img src="/website_elnoman/static/src/img/rumex.png" class="d-block img-fluid" alt="..."/>
+                                                        <img src="/website_elnoman/static/src/img/rumex.png"
+                                                             class="d-block img-fluid" alt="..."/>
                                                     </a>
                                                 </div>
                                             </div>
@@ -861,27 +994,31 @@
                                         <div class="row mt-5">
                                             <div class="col-md-12 mb-5">
                                                 <div class="build_date_content">
-                                                    <h4>الموزعين المعتمدين </h4>
+                                                    <h4>الموزعين المعتمدين</h4>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="product_client_img">
                                                     <a target="_blank" href="https://www.scican.com">
-                                                        <img src="/website_elnoman/static/src/img/scican.png" class="d-block img-fluid" alt="..."/>
+                                                        <img src="/website_elnoman/static/src/img/scican.png"
+                                                             class="d-block img-fluid" alt="..."/>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="product_client_img">
-                                                    <a target="_blank" href="https://www.ufsk.com/en.html?tx_cncookiest6_main%5Baction%5D=cookie">
-                                                        <img src="/website_elnoman/static/src/img/ufsk.png" class="d-block img-fluid" alt="..."/>
+                                                    <a target="_blank"
+                                                       href="https://www.ufsk.com/en.html?tx_cncookiest6_main%5Baction%5D=cookie">
+                                                        <img src="/website_elnoman/static/src/img/ufsk.png"
+                                                             class="d-block img-fluid" alt="..."/>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="product_client_img">
                                                     <a target="_blank" href="https://www.keeler.co.uk">
-                                                        <img src="/website_elnoman/static/src/img/keeler.png" class="d-block img-fluid" alt="..."/>
+                                                        <img src="/website_elnoman/static/src/img/keeler.png"
+                                                             class="d-block img-fluid" alt="..."/>
                                                     </a>
                                                 </div>
                                             </div>
@@ -893,8 +1030,10 @@
                                         <div>
                                             <div class="service_content_banner_content">
                                                 <h2>سهوله تصفح المعدات الطبيه !</h2>
-                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو  عوضاً عن استخدام </p>
-                                                <a  href="mailto:info@elnomangroup.com">تواصل معنا</a>
+                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ للأحرف
+                                                    الموجودة في اللغة العربية بدلا من أو عوضاً عن استخدام
+                                                </p>
+                                                <a href="mailto:info@elnomangroup.com">تواصل معنا</a>
                                             </div>
                                         </div>
                                     </div>
@@ -924,42 +1063,56 @@
                                 <section class="oe_structure service_banner_sec">
                                     <div class="container">
                                         <div style="position: relative;">
-                                            <img src="/website_elnoman/static/src/img/service_banner.png" class="d-block img-fluid" alt="..."/>
+                                            <img src="/website_elnoman/static/src/img/service_banner.png"
+                                                 class="d-block img-fluid" alt="..."/>
                                             <div class="service_banner_content">
                                                 <h2>خدماتنا</h2>
-                                                <p>يعلم كل فرد أنه فقط من خلال التعاون الكامل والعمل معًا سيأخذنا إلى آفاق جديدة. يبقى هدفنا تقديم أفضل خدمة وتطبيقها على جميع عملائنا في جميع أنحاء البلاد. النعمان يتصرف باحترام لكل فرد. الجودة ورضا العملاء هو شغلنا الشاغل</p>
+                                                <p>يعلم كل فرد أنه فقط من خلال التعاون الكامل والعمل معًا سيأخذنا إلى
+                                                    آفاق جديدة. يبقى هدفنا تقديم أفضل خدمة وتطبيقها على جميع عملائنا في
+                                                    جميع أنحاء البلاد. النعمان يتصرف باحترام لكل فرد. الجودة ورضا
+                                                    العملاء هو شغلنا الشاغل
+                                                </p>
                                             </div>
 
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-5">
-                                                <img src="/website_elnoman/static/src/img/service2.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/service2.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </div>
                                             <div class="offset-md-1 col-md-5">
                                                 <div class="service_details_content">
                                                     <h4>التركيب</h4>
                                                     <p>يتم تركيب المعدات بأقصى درجات الأمان والامتثال
                                                         للمعايير الطبية ، هذه مصنوعة من قبل متخصصين
-                                                        المنتجين المدربين بما في ذلك دعم الخدمة.</p>
+                                                        المنتجين المدربين بما في ذلك دعم الخدمة.
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="col-md-5">
                                                 <div class="service_details_content">
                                                     <h4>التدريب</h4>
                                                     <p>المهندسين المؤهلين / أخصائي المنتج / التطبيق يوفر
-                                                        التدريب على المنتج.</p>
+                                                        التدريب على المنتج.
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="offset-md-1 col-md-5">
-                                                <img src="/website_elnoman/static/src/img/service1.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/service1.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </div>
                                             <div class="col-md-5">
-                                                <img src="/website_elnoman/static/src/img/service3.png" class="d-block img-fluid" alt="..."/>
+                                                <img src="/website_elnoman/static/src/img/service3.png"
+                                                     class="d-block img-fluid" alt="..."/>
                                             </div>
                                             <div class="offset-md-1 col-md-5">
                                                 <div class="service_details_content">
                                                     <h4>خدمة</h4>
-                                                    <p>بعد التثبيت ، يتوفر دعم الخدمة لدينا دائمًا لتوفير أقصى قدر من الدعم لك حتى يشعر المستخدم النهائي بالراحة مع المنتجات المثبتة ، كما نقدم خدمة عبر الإنترنت عن بعد للأنظمة التي تعمل بنظام التشغيل لتوفير الوقت وضمان الأداء المستمر.</p>
+                                                    <p>بعد التثبيت ، يتوفر دعم الخدمة لدينا دائمًا لتوفير أقصى قدر من
+                                                        الدعم لك حتى يشعر المستخدم النهائي بالراحة مع المنتجات المثبتة ،
+                                                        كما نقدم خدمة عبر الإنترنت عن بعد للأنظمة التي تعمل بنظام
+                                                        التشغيل لتوفير الوقت وضمان الأداء المستمر.
+                                                    </p>
                                                 </div>
                                             </div>
 
@@ -971,8 +1124,10 @@
                                         <div>
                                             <div class="service_content_banner_content">
                                                 <h2>سهوله تصفح المعدات الطبيه !</h2>
-                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو  عوضاً عن استخدام </p>
-                                                <a  href="mailto:info@elnomangroup.com">تواصل معنا</a>
+                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ للأحرف
+                                                    الموجودة في اللغة العربية بدلا من أو عوضاً عن استخدام
+                                                </p>
+                                                <a href="mailto:info@elnomangroup.com">تواصل معنا</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1002,31 +1157,42 @@
                                 <section class="oe_structure reviews_banner_sec">
                                     <div class="container">
                                         <div style="position: relative;">
-                                            <img src="/website_elnoman/static/src/img/riews_bg.png" class="d-block img-fluid" alt="..."/>
+                                            <img src="/website_elnoman/static/src/img/riews_bg.png"
+                                                 class="d-block img-fluid" alt="..."/>
                                             <div class="service_banner_content">
                                                 <h2>آراء عملاؤنا</h2>
-                                                <p class="text-center">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرفالموجودة في اللغة العربية بدلا من أو وضاً عن استخدام يتم استخدام نص لوريم إيبسوم لأنطبيعياَ  للأحرف الموجودة في اللغة
-                                                    العربية بدلا من أو  عوضاً عن استخدام </p>
+                                                <p class="text-center">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ
+                                                    طبيعياَ للأحرفالموجودة في اللغة العربية بدلا من أو وضاً عن استخدام
+                                                    يتم استخدام نص لوريم إيبسوم لأنطبيعياَ للأحرف الموجودة في اللغة
+                                                    العربية بدلا من أو عوضاً عن استخدام
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="col-md-6 mb-5">
                                                 <div class="build_date_content">
-                                                    <h5>عملاء شركة النعمان </h5>
-                                                    <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرفالموجودة في اللغة العربية بدلا من أو وضاً عن استخدام يتم استخدام نص لوريم إيبسوم لأنطبيعياَ  للأحرف الموجودة في اللغة
-                                                        العربية بدلا من أو  عوضاً عن استخدام
+                                                    <h5>عملاء شركة النعمان</h5>
+                                                    <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ
+                                                        للأحرفالموجودة في اللغة العربية بدلا من أو وضاً عن استخدام يتم
+                                                        استخدام نص لوريم إيبسوم لأنطبيعياَ للأحرف الموجودة في اللغة
+                                                        العربية بدلا من أو عوضاً عن استخدام
                                                         <br/>
                                                         <br/>
-                                                        يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرفالموجودة في اللغة العربية بدلا من أو وضاً عن استخدام يتم استخدام نص لوريم إيبسوم لأنطبيعياَ  للأحرف الموجودة في اللغة
-                                                        العربية بدلا من أو  عوضاً عن استخدام
+                                                        يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ
+                                                        للأحرفالموجودة في اللغة العربية بدلا من أو وضاً عن استخدام يتم
+                                                        استخدام نص لوريم إيبسوم لأنطبيعياَ للأحرف الموجودة في اللغة
+                                                        العربية بدلا من أو عوضاً عن استخدام
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 ">
-                                                <img src="/website_elnoman/static/src/img/clients_logo.png" class="product_details_img img-fluid" />
+                                                <img src="/website_elnoman/static/src/img/clients_logo.png"
+                                                     class="product_details_img img-fluid"/>
                                             </div>
                                             <div class="col-12 mt-5 home_service_container">
-                                                <a href="/service" style="text-decoration: none;"><h3>آراء عملاؤنا المتميزون</h3></a>
+                                                <a href="/service" style="text-decoration: none;">
+                                                    <h3>آراء عملاؤنا المتميزون</h3>
+                                                </a>
                                                 <p>وصف دقيق لما يقدمه المحتوي عن موقع النعمان</p>
                                             </div>
 
@@ -1039,77 +1205,89 @@
                                             <h3>آراء عملاؤنا المتميزون</h3>
                                             <p>وصف دقيق لما يقدمه المحتوي عن موقع النعمان</p>
                                         </div>
-                                        <div id="elnoman_client_reviews_carousel" class="carousel slide" data-ride="carousel">
+                                        <div id="elnoman_client_reviews_carousel" class="carousel slide"
+                                             data-ride="carousel">
                                             <div class="slider_contain">
                                                 <div class="carousel-inner">
-                                                    <div class="carousel-item active">
-                                                        <div class="elnoman_client_reviews_carousel_content text-center mt-5">
-                                                            <h4 style="font-weight: 900 !important;">أحمد محمد</h4>
-                                                            <p>طبيب متخصص في جراح العيون</p>
-                                                            <p class="client_review_Desc">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو
-                                                                عوضاً </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="elnoman_client_reviews_carousel_content text-center mt-5">
-                                                            <h4 style="font-weight: 900 !important;">أحمد محمد</h4>
-                                                            <p>طبيب متخصص في جراح العيون</p>
-                                                            <p class="client_review_Desc">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو
-                                                                عوضاً </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="elnoman_client_reviews_carousel_content text-center mt-5">
-                                                            <h4 style="font-weight: 900 !important;">أحمد محمد</h4>
-                                                            <p>طبيب متخصص في جراح العيون</p>
-                                                            <p class="client_review_Desc">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو
-                                                                عوضاً </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="elnoman_client_reviews_carousel_content text-center mt-5">
-                                                            <h4 style="font-weight: 900 !important;">أحمد محمد</h4>
-                                                            <p>طبيب متخصص في جراح العيون</p>
-                                                            <p class="client_review_Desc">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو
-                                                                عوضاً </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <div class="elnoman_client_reviews_carousel_content text-center mt-5">
-                                                            <h4 style="font-weight: 900 !important;">أحمد محمد</h4>
-                                                            <p>طبيب متخصص في جراح العيون</p>
-                                                            <p class="client_review_Desc">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو
-                                                                عوضاً </p>
-                                                        </div>
-                                                    </div>
-
+                                                    <t t-set="index" t-value="true"/>
+                                                    <t t-foreach="customer_review" t-as="review">
+                                                        <t t-if="index">
+                                                            <div class="carousel-item active">
+                                                                <div class="elnoman_client_reviews_carousel_content text-center mt-5">
+                                                                    <h4 style="font-weight: 900 !important;">
+                                                                        <t t-esc="review.name"/>
+                                                                    </h4>
+                                                                    <p>
+                                                                        <t t-esc="review.job"/>
+                                                                    </p>
+                                                                    <p class="client_review_Desc">
+                                                                        <t t-esc="review.review"/>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <div class="carousel-item">
+                                                                <div class="elnoman_client_reviews_carousel_content text-center mt-5">
+                                                                    <h4 style="font-weight: 900 !important;">
+                                                                        <t t-esc="review.name"/>
+                                                                    </h4>
+                                                                    <p>
+                                                                        <t t-esc="review.job"/>
+                                                                    </p>
+                                                                    <p class="client_review_Desc">
+                                                                        <t t-esc="review.review"/>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </t>
+                                                        <t t-set="index" t-value="false"/>
+                                                    </t>
                                                 </div>
-                                                <a class="carousel-control-prev elnoman_header_indicators_reviews_rows" href="#elnoman_client_reviews_carousel" role="button" data-slide="prev">
+                                                <a class="carousel-control-prev elnoman_header_indicators_reviews_rows"
+                                                   href="#elnoman_client_reviews_carousel" role="button"
+                                                   data-slide="prev">
                                                     <span class="carousel-control-next-icon"></span>
                                                     <span class="sr-only">Previous</span>
                                                 </a>
-                                                <a class="carousel-control-next elnoman_header_indicators_reviews_rows" href="#elnoman_client_reviews_carousel" role="button" data-slide="next">
+                                                <a class="carousel-control-next elnoman_header_indicators_reviews_rows"
+                                                   href="#elnoman_client_reviews_carousel" role="button"
+                                                   data-slide="next">
                                                     <span class="carousel-control-prev-icon"></span>
                                                     <span class="sr-only">Next</span>
                                                 </a>
                                                 <ol class="carousel-indicators elnoman_header_indicators elnoman_header_indicators_reviews">
-                                                    <li data-target="#elnoman_client_reviews_carousel" data-slide-to="0" class="circle active"/>
-                                                    <li data-target="#elnoman_client_reviews_carousel" data-slide-to="1" class="circle"/>
-                                                    <li data-target="#elnoman_client_reviews_carousel" data-slide-to="2" class="circle"/>
-                                                    <li data-target="#elnoman_client_reviews_carousel" data-slide-to="3" class="circle"/>
-                                                    <li data-target="#elnoman_client_reviews_carousel" data-slide-to="4" class="circle"/>
+                                                    <li data-target="#elnoman_client_reviews_carousel" data-slide-to="0"
+                                                        class="circle active"/>
+                                                    <li data-target="#elnoman_client_reviews_carousel" data-slide-to="1"
+                                                        class="circle"/>
+                                                    <li data-target="#elnoman_client_reviews_carousel" data-slide-to="2"
+                                                        class="circle"/>
+                                                    <li data-target="#elnoman_client_reviews_carousel" data-slide-to="3"
+                                                        class="circle"/>
+                                                    <li data-target="#elnoman_client_reviews_carousel" data-slide-to="4"
+                                                        class="circle"/>
                                                 </ol>
+
                                             </div>
                                         </div>
                                     </div>
                                 </section>
-                                <section class="oe_structure service_contact_banner_sec reviews_service_contact_banner_sec">
+                                <!--                            <div class="products_pager form-inline justify-content-center mt-3">-->
+                                <!--                                <t t-call="website.pager">-->
+                                <!--                                <t t-set="_classes">mt-2 ml-md-2</t>-->
+                                <!--                                </t>-->
+                                <!--                            </div>-->
+                                <section
+                                        class="oe_structure service_contact_banner_sec reviews_service_contact_banner_sec">
                                     <div class="container">
                                         <div>
                                             <div class="service_content_banner_content">
                                                 <h2>سهوله تصفح المعدات الطبيه !</h2>
-                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو  عوضاً عن استخدام </p>
-                                                <a  href="mailto:info@elnomangroup.com">تواصل معنا</a>
+                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ للأحرف
+                                                    الموجودة في اللغة العربية بدلا من أو عوضاً عن استخدام
+                                                </p>
+                                                <a href="mailto:info@elnomangroup.com">تواصل معنا</a>
                                             </div>
                                         </div>
                                     </div>

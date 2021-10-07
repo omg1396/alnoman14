@@ -25,11 +25,13 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+       'security/ir.model.access.csv',
         'views/assets.xml',
         'views/snippets_template.xml',
         'views/views.xml',
         'views/templates.xml',
+        'views/customer_review.xml',
+        'views/product_template.xml',
         'data/pages.xml',
     ],
     'images': [
