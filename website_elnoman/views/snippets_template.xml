@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+        <!-- Snippets in Website -->
+
+
+        <template name="header snippets option" id="header_snippets_option" inherit_id="website.snippet_options">
+            <xpath expr="//we-button[@data-name='header_default_opt']" position="after">
+                <we-button title="Elnoman Header"
+                           data-name="header_elnoman_opt"
+                           data-customize-website-views="website_elnoman.elnoman_header_layout"
+                           data-customize-website-variable="'elnoman'"
+                           data-img="/website_elnoman/static/src/img/header_template_custom.png"/>
+            </xpath>
+        </template>
+
+
+        <template name="footer snippets option" id="footer_snippets_option" inherit_id="website.snippet_options">
+            <xpath expr="//we-select[@data-variable='footer-template']/we-button[@data-customize-website-views='website.footer_custom']" position="before">
+                <we-button title="Elnoman Footer"
+                           data-name="header_elnoman_opt"
+                           data-customize-website-views="website_elnoman.elnoman_footer_layout"
+                           data-customize-website-variable="'elnoman'"
+                           data-img="/website_elnoman/static/src/img/footer_template_links.png"/>
+            </xpath>
+        </template>
+
+
+    </data>
+</odoo>
