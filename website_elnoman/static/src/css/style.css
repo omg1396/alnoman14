@@ -683,6 +683,15 @@ section.home_service_sec {
     margin: auto;
     display: block;
 }
+.o_website_form_send.contact_form_btn_page {
+    background: #00aeef;
+    color: #fff;
+    padding: 3px 100px;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
 input.form-control.o_website_form_input.custom_contact_us_form:focus,textarea.o_website_form_input.custom_contact_us_form:focus {
     border-color: #01152b !important;
     color: #01152b !important;
@@ -851,4 +860,36 @@ p.product_details_content_desc {
 }
 .elnoman_header_indicator_latest_product{
     bottom: -50px !important;
+}
+.contact_us_page_desc p{
+    color: #22242a;
+    margin-top: 40px;
+}
+.contact_information_item {
+    list-style: none;
+    margin: 2rem .5rem;
+}
+.contact_information_item_icon {
+    font-size: 19px;
+    float: left;
+    margin-right: 20px;
+}
+.contact_information_item_contain {
+    margin-left: .5rem;
+    display: inline-block;
+    max-width: 90%;
+    float: left;
+}
+.contact_information_item_contain P {
+    color: #000;
+    margin-bottom: 0;
+}
+p.contact_information_item_label {
+    color: #cccccc;
+    font-size: 16px;
+}
+.custom_contact_us_form_page{
+    background: #f2f2f2;
+    border-color: #f2f2f2 !important;
+    border: unset !important;
 }

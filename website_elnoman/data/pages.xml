@@ -1294,6 +1294,137 @@
                 </t>
             </field>
         </record>
+         <!-- === Contact us Page === -->
+        <record id="elnoman_contact_us_page" model="website.page">
+
+            <field name="name">Contact Us Elnoman</field>
+            <field name="website_published">True</field>
+            <field name="url">/contact_us</field>
+            <field name="track">True</field>
+            <field name="type">qweb</field>
+            <field name="key">website_elnoman.elnoman_contact_us_page</field>
+
+
+            <field name="arch" type="xml">
+                <t name="Contact Us Elnoman" priority="10" t-name="website_elnoman.elnoman_contact_us_page">
+                    <t t-call="website.layout">
+                        <div id="wrap" class="oe_structure oe_website_sale ">
+                            <div class="oe_structure">
+                                <section class="oe_structure service_banner_sec">
+                                    <div class="container">
+                                        <div style="position: relative;">
+                                            <img src="/website_elnoman/static/src/img/contact_us_bg.png" class="d-block img-fluid" alt="..."/>
+                                            <div class="service_banner_content">
+                                                <h2>تواصل معنا</h2>
+                                                <p class="text-center">توفر مجموعة النعمان دعم وخدمة عملاء متاحة علي مدار ساعات العمل </p>
+                                            </div>
+                                        </div>
+                                        <div class="contact_us_page_desc">
+                                            <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <form action="/website_form/" method="post" class="s_website_form container-fluid mt32 o_fake_not_editable" enctype="multipart/form-data" data-name="Form Builder" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-12 contact_us_form_inputs">
+                                                                <div class="form-group form-field o_website_form_required_custom">
+                                                                    <input type="text" class="form-control o_website_form_input custom_contact_us_form_page" placeholder="اﻷسم" name="contact_name" required=""/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 contact_us_form_inputs">
+                                                                <div class="form-group form-field o_website_form_custom">
+                                                                    <input type="text" class="form-control o_website_form_input custom_contact_us_form_page" placeholder="البريد الالكتروني" name="email_from" required=""/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 contact_us_form_inputs">
+                                                                <div class="form-group form-field o_website_form_custom">
+                                                                    <input type="text" class="form-control o_website_form_input custom_contact_us_form_page" placeholder="رقم الهاتف" name="phone" required=""/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 contact_us_form_inputs">
+                                                                <div class="form-group form-field o_website_form_required_custom">
+                                                                    <input type="text" class="form-control o_website_form_input custom_contact_us_form_page" placeholder="الموضوع" name="name" required=""/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 contact_us_form_inputs">
+                                                                <div class="form-group form-field o_website_form_custom o_website_form_required_custom">
+                                                                    <textarea class="form-control o_website_form_input custom_contact_us_form_page" rows="9" placeholder="الرساله" name="description" required=""/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn form_btn btn-lg o_website_form_send contact_form_btn_page" data-original-title="" title="" aria-describedby="tooltip307407">ارسال</button>
+                                                        </div>
+                                                        <div class="text-center mt-3">
+                                                            <span id="o_website_form_result" class="text-danger ml8"/>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div>
+                                                    <ul class="contact_information_list">
+                                                        <li class="contact_information_item clearfix">
+                                                            <i class="fa fa-map-marker contact_information_item_icon"></i>
+                                                            <div class="contact_information_item_contain">
+                                                                <p>
+                                                                    العنوان</p>
+                                                                <p class="contact_information_item_label">بلدية حي الأندلس - طرابلس - ليبيا</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="contact_information_item clearfix">
+                                                            <i class="fa fa-envelope contact_information_item_icon"></i>
+                                                            <div class="contact_information_item_contain">
+                                                                <p>تواصل من خلال البريد الإلكتروني</p>
+                                                                <p class="contact_information_item_label">info@elnomangroup.com</p>
+                                                            </div>
+                                                        </li>
+                                                        <hr style="border-top: 1px solid #00aeef;"/>
+                                                        <li class="contact_information_item clearfix">
+                                                            <i class="fa fa-phone contact_information_item_icon"></i>
+                                                            <div class="contact_information_item_contain">
+                                                                <p>تواصل من خلال الهاتف</p>
+                                                                <p class="contact_information_item_label">+218 21 477 1882</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="contact_information_item clearfix">
+                                                            <i class="fa fa-fax contact_information_item_icon"></i>
+                                                            <div class="contact_information_item_contain">
+                                                                <p>تواصل من خلال الهاتف</p>
+                                                                <p class="contact_information_item_label">+218 21 477 1882</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div>
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.090620448327!2d13.133653715184321!3d32.86932168094414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8ecfba35226dd%3A0x34b36da79436449!2sHay%20Al%20Andalus%20Municipality!5e0!3m2!1sen!2seg!4v1633087913929!5m2!1sen!2seg" width="400" height="300" style="border:0; margin-bottom: 50px;" allowfullscreen="" loading="lazy"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                <section
+                                        class="oe_structure service_contact_banner_sec reviews_service_contact_banner_sec">
+                                    <div class="container">
+                                        <div>
+                                            <div class="service_content_banner_content">
+                                                <h2>سهوله تصفح المعدات الطبيه !</h2>
+                                                <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ للأحرف
+                                                    الموجودة في اللغة العربية بدلا من أو عوضاً عن استخدام
+                                                </p>
+                                                <a href="mailto:info@elnomangroup.com">تواصل معنا</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+
 
 
         <record id="elnoman_menu_products" model="website.menu">
@@ -1331,5 +1462,11 @@
             <field name="sequence" type="int">35</field>
         </record>
 
+        <record id="elnoman_menu_contact_us" model="website.menu">
+            <field name="name">تواصل معنا</field>
+            <field name="url">/contact_us</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">40</field>
+        </record>
     </data>
 </odoo>
