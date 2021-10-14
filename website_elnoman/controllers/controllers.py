@@ -46,19 +46,23 @@ class Website(Website):
 class LatestProducts(http.Controller):
     @http.route(['/latest_product', '/latest_product/page/<int:page>'], type='http', auth="public",
                 website=True)
-    def Customer_reviews_page(self, page=0, **kw):
+    def Customer_reviews_page(self, page=0, **post):
         LatestProducts = request.env['product.template'].sudo().search([('latest_product', '=', True)])
-        total = LatestProducts.sudo().search_count([])
+        total = len(LatestProducts.ids)
         pager = request.website.pager(
             url='/latest_product',
             total=total,
             page=page,
             step=12,
+            scope=7,
+            url_args=post
         )
-        print(pager)
         offset = pager['offset']
         latest_product = LatestProducts[offset: offset + 12]
-        data = {'latest_product': latest_product, 'pager': pager}
+        data = {'latest_product': latest_product, 'pager': pager,
+                'search_count': total,
+                'ppg': 12,
+                'ppr': 4}
         return http.request.render('website_elnoman.elnoman_latest_product_page', data)
 
     @http.route([

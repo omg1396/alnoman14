@@ -707,75 +707,34 @@
                     <t t-call="website.layout">
                         <div id="wrap" class="oe_structure oe_website_sale ">
                             <div class="oe_structure">
-                                <section class="oe_structure m-5">
-                                    <div class="container" id="latest_products">
-                                        <div class="latest_product_title">
-                                            <h2>منتجاتنا</h2>
-                                            <img src="/website_elnoman/static/src/img/under_line.png"
-                                                 class="img-fluid"/>
-                                        </div>
-                                        <div class="row mt-5">
-                                            <t t-foreach="latest_product" t-as="latest">
-                                                <div class="col-md-4">
-                                                    <div class="product_list_grid">
-                                                        <a t-attf-href="/latest_product/#{latest.id}">
-                                                            <!--                                                            <img src="/website_elnoman/static/src/img/product.png"-->
-                                                            <!--                                                                 class="img-fluid"/>-->
-                                                            <img t-att-src="'/web/image/product.template/%s/image_1920' % latest.id"
-                                                                 class="d-block img-fluid" alt="..."/>
-                                                            <h5>
-                                                                <t t-esc="latest.name"/>
-                                                            </h5>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </t>
-                                        </div>
-                                        <!--                                        <div class="products_pager form-inline justify-content-center mt-3">-->
-                                        <!--                                            <t t-call="website.pager">-->
-                                        <!--                                                <t t-set="_classes">mt-2 ml-md-2</t>-->
-                                        <!--                                            </t>-->
-                                        <!--                                        </div>-->
-<!--                                        <div class="row mt-5">-->
-<!--                                            <div class="col-md-12 text-center">-->
-<!--                                                <div class="pagination_products">-->
-<!--                                                    <a href="#">&gt;&gt;</a>-->
-<!--                                                    <a href="#" class="active">1</a>-->
-<!--                                                    <a href="#">2</a>-->
-<!--                                                    <a href="#">3</a>-->
-<!--                                                    <a href="#">&lt;&lt;</a>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-
-                                        <div class="products_pager pagination_products form-inline justify-content-center mt-3">
-                                            <ul>
-                                                <li t-attf-class="prev #{'active' if pager['page']['num'] == 1 else '' }">
-                                                    <a class="page-link"
-                                                       t-att-href="'/latest_product/page/'+str(previous)"
-                                                       tabindex="-1">Previous
-                                                    </a>
-                                                </li>
-                                                <t t-foreach="range(pager['page_start']['num'], pager['page_end']['num']+1)"
-                                                   t-as="p">
-                                                    <li t-att-class=" 'active' if pager['page']['num'] == p else '' ">
-                                                        <a class="page-link"
-                                                           t-att-href="'/latest_product/page/'+str(p)" t-esc="p">
-                                                            <span class="sr-only">(current)</span>
-                                                        </a>
-                                                    </li>
-                                                </t>
-                                                <li t-attf-class="next #{'active' if pager['page'] == pager['page_end'] else '' }">
-                                                    <a class="page-link"
-                                                       t-att-href="'/latest_product/page/'+str(next)">
-                                                        Next
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                <div class="container" id="latest_products">
+                                    <div class="latest_product_title">
+                                        <h2>منتجاتنا</h2>
+                                        <img src="/website_elnoman/static/src/img/under_line.png"
+                                             class="img-fluid"/>
                                     </div>
-                                </section>
-                                <section class="oe_structure service_contact_banner_sec">
+                                    <div class="row mt-5">
+                                        <t t-foreach="latest_product" t-as="latest">
+                                            <div class="col-md-4">
+                                                <div class="product_list_grid">
+                                                    <a t-attf-href="/latest_product/#{latest.id}">
+                                                        <img t-att-src="'/web/image/product.template/%s/image_1920' % latest.id"
+                                                             class="d-block img-fluid" alt="..."/>
+                                                        <h5>
+                                                            <t t-esc="latest.name"/>
+                                                        </h5>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </div>
+                                    <div class="products_pager form-inline justify-content-center py-3">
+                                        <t t-call="website.pager"/>
+                                    </div>
+
+                                </div>
+
+                                <div class="oe_structure service_contact_banner_sec">
                                     <div class="container">
                                         <div>
                                             <div class="service_content_banner_content">
@@ -787,7 +746,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </section>
+                                </div>
 
                             </div>
                         </div>
@@ -844,10 +803,10 @@
                                             </div>
                                             <div class="text-center">
                                                 <t t-foreach="record.product_properties_ids" t-as="prop">
-<!--                                                    <t t-esc="prop_index/2" />-->
+                                                    <!--                                                    <t t-esc="prop_index/2" />-->
                                                     <t t-if="(prop_index % 2) == 0">
                                                         <p class="product_details_content_desc product_details_content_desc_bg">
-                                                           <t t-esc="prop.name"/>
+                                                            <t t-esc="prop.name"/>
                                                         </p>
                                                     </t>
                                                     <t t-else="">
@@ -855,7 +814,7 @@
                                                             <t t-esc="prop.name"/>
                                                         </p>
                                                     </t>
-                                                    <t t-set="prop_index + 1" />
+                                                    <t t-set="prop_index + 1"/>
                                                 </t>
 
                                             </div>
@@ -868,7 +827,7 @@
                                             <div class="offset-md-4 col-md-4">
                                                 <div class="text-center">
                                                     <img t-att-src="'/web/image/product.template/%s/image_1920' % record.id"
-                                                     class="d-block img-fluid" alt="..."/>
+                                                         class="d-block img-fluid" alt="..."/>
                                                     <p>Data collected by Erasmus University, Rotterdam, NL
                                                     </p>
                                                 </div>
@@ -1305,7 +1264,7 @@
                 </t>
             </field>
         </record>
-         <!-- === Contact us Page === -->
+        <!-- === Contact us Page === -->
         <record id="elnoman_contact_us_page" model="website.page">
 
             <field name="name">Contact Us Elnoman</field>
@@ -1324,48 +1283,75 @@
                                 <section class="oe_structure service_banner_sec">
                                     <div class="container">
                                         <div style="position: relative;">
-                                            <img src="/website_elnoman/static/src/img/contact_us_bg.png" class="d-block img-fluid" alt="..."/>
+                                            <img src="/website_elnoman/static/src/img/contact_us_bg.png"
+                                                 class="d-block img-fluid" alt="..."/>
                                             <div class="service_banner_content wow bounceInDown">
                                                 <h2>تواصل معنا</h2>
-                                                <p class="text-center">توفر مجموعة النعمان دعم وخدمة عملاء متاحة علي مدار ساعات العمل </p>
+                                                <p class="text-center">توفر مجموعة النعمان دعم وخدمة عملاء متاحة علي
+                                                    مدار ساعات العمل
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="contact_us_page_desc">
-                                            <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ  للأحرف الموجودة في اللغة العربية بدلا من أو</p>
+                                            <p>يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ للأحرف الموجودة في
+                                                اللغة العربية بدلا من أو
+                                            </p>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-7">
-                                                <form action="/website_form/" method="post" class="s_website_form container-fluid mt32 o_fake_not_editable" enctype="multipart/form-data" data-name="Form Builder" data-model_name="crm.lead" data-success_page="/contactus-thank-you">
+                                                <form action="/website_form/" method="post"
+                                                      class="s_website_form container-fluid mt32 o_fake_not_editable"
+                                                      enctype="multipart/form-data" data-name="Form Builder"
+                                                      data-model_name="crm.lead"
+                                                      data-success_page="/contactus-thank-you">
                                                     <div class="container">
                                                         <div class="row">
                                                             <div class="col-md-12 contact_us_form_inputs">
                                                                 <div class="form-group form-field o_website_form_required_custom">
-                                                                    <input type="text" class="form-control o_website_form_input custom_contact_us_form_page" placeholder="اﻷسم" name="contact_name" required=""/>
+                                                                    <input type="text"
+                                                                           class="form-control o_website_form_input custom_contact_us_form_page"
+                                                                           placeholder="اﻷسم" name="contact_name"
+                                                                           required=""/>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-12 contact_us_form_inputs">
                                                                 <div class="form-group form-field o_website_form_custom">
-                                                                    <input type="text" class="form-control o_website_form_input custom_contact_us_form_page" placeholder="البريد الالكتروني" name="email_from" required=""/>
+                                                                    <input type="text"
+                                                                           class="form-control o_website_form_input custom_contact_us_form_page"
+                                                                           placeholder="البريد الالكتروني"
+                                                                           name="email_from" required=""/>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 contact_us_form_inputs">
                                                                 <div class="form-group form-field o_website_form_custom">
-                                                                    <input type="text" class="form-control o_website_form_input custom_contact_us_form_page" placeholder="رقم الهاتف" name="phone" required=""/>
+                                                                    <input type="text"
+                                                                           class="form-control o_website_form_input custom_contact_us_form_page"
+                                                                           placeholder="رقم الهاتف" name="phone"
+                                                                           required=""/>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 contact_us_form_inputs">
                                                                 <div class="form-group form-field o_website_form_required_custom">
-                                                                    <input type="text" class="form-control o_website_form_input custom_contact_us_form_page" placeholder="الموضوع" name="name" required=""/>
+                                                                    <input type="text"
+                                                                           class="form-control o_website_form_input custom_contact_us_form_page"
+                                                                           placeholder="الموضوع" name="name"
+                                                                           required=""/>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-12 contact_us_form_inputs">
                                                                 <div class="form-group form-field o_website_form_custom o_website_form_required_custom">
-                                                                    <textarea class="form-control o_website_form_input custom_contact_us_form_page" rows="9" placeholder="الرساله" name="description" required=""/>
+                                                                    <textarea
+                                                                            class="form-control o_website_form_input custom_contact_us_form_page"
+                                                                            rows="9" placeholder="الرساله"
+                                                                            name="description" required=""/>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
-                                                            <button class="btn form_btn btn-lg o_website_form_send contact_form_btn_page" data-original-title="" title="" aria-describedby="tooltip307407">ارسال</button>
+                                                            <button class="btn form_btn btn-lg o_website_form_send contact_form_btn_page"
+                                                                    data-original-title="" title=""
+                                                                    aria-describedby="tooltip307407">ارسال
+                                                            </button>
                                                         </div>
                                                         <div class="text-center mt-3">
                                                             <span id="o_website_form_result" class="text-danger ml8"/>
@@ -1380,15 +1366,20 @@
                                                             <i class="fa fa-map-marker contact_information_item_icon"></i>
                                                             <div class="contact_information_item_contain">
                                                                 <p>
-                                                                    العنوان</p>
-                                                                <p class="contact_information_item_label">بلدية حي الأندلس - طرابلس - ليبيا</p>
+                                                                    العنوان
+                                                                </p>
+                                                                <p class="contact_information_item_label">بلدية حي
+                                                                    الأندلس - طرابلس - ليبيا
+                                                                </p>
                                                             </div>
                                                         </li>
                                                         <li class="contact_information_item clearfix">
                                                             <i class="fa fa-envelope contact_information_item_icon"></i>
                                                             <div class="contact_information_item_contain">
                                                                 <p>تواصل من خلال البريد الإلكتروني</p>
-                                                                <p class="contact_information_item_label">info@elnomangroup.com</p>
+                                                                <p class="contact_information_item_label">
+                                                                    info@elnomangroup.com
+                                                                </p>
                                                             </div>
                                                         </li>
                                                         <hr style="border-top: 1px solid #00aeef;"/>
@@ -1396,26 +1387,33 @@
                                                             <i class="fa fa-phone contact_information_item_icon"></i>
                                                             <div class="contact_information_item_contain">
                                                                 <p>تواصل من خلال الهاتف</p>
-                                                                <p class="contact_information_item_label">+218 21 477 1882</p>
+                                                                <p class="contact_information_item_label">+218 21 477
+                                                                    1882
+                                                                </p>
                                                             </div>
                                                         </li>
                                                         <li class="contact_information_item clearfix">
                                                             <i class="fa fa-fax contact_information_item_icon"></i>
                                                             <div class="contact_information_item_contain">
                                                                 <p>تواصل من خلال الهاتف</p>
-                                                                <p class="contact_information_item_label">+218 21 477 1882</p>
+                                                                <p class="contact_information_item_label">+218 21 477
+                                                                    1882
+                                                                </p>
                                                             </div>
                                                         </li>
                                                     </ul>
                                                     <div>
-                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.090620448327!2d13.133653715184321!3d32.86932168094414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8ecfba35226dd%3A0x34b36da79436449!2sHay%20Al%20Andalus%20Municipality!5e0!3m2!1sen!2seg!4v1633087913929!5m2!1sen!2seg" width="400" height="300" style="border:0; margin-bottom: 50px;" allowfullscreen="" loading="lazy"></iframe>
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.090620448327!2d13.133653715184321!3d32.86932168094414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8ecfba35226dd%3A0x34b36da79436449!2sHay%20Al%20Andalus%20Municipality!5e0!3m2!1sen!2seg!4v1633087913929!5m2!1sen!2seg"
+                                                                width="400" height="300"
+                                                                style="border:0; margin-bottom: 50px;"
+                                                                allowfullscreen="" loading="lazy"></iframe>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </section>
-                                                                <section
+                                <section
                                         class="oe_structure service_contact_banner_sec reviews_service_contact_banner_sec">
                                     <div class="container">
                                         <div>
@@ -1435,7 +1433,6 @@
                 </t>
             </field>
         </record>
-
 
 
         <record id="elnoman_menu_products" model="website.menu">
