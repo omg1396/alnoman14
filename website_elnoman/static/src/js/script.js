@@ -1,5 +1,5 @@
 $(function () {
-//    new WOW().init();
+    new WOW().init();
     $('.home_products_slider').owlCarousel({
         loop:true,
         margin:10,

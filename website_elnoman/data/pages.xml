@@ -501,7 +501,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="col-md-6 mt-4">
+                                        <div class="col-md-6 mt-4 home_page_map">
                                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.090620448327!2d13.133653715184321!3d32.86932168094414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8ecfba35226dd%3A0x34b36da79436449!2sHay%20Al%20Andalus%20Municipality!5e0!3m2!1sen!2seg!4v1633087913929!5m2!1sen!2seg"
                                                     width="600" height="320" style="border:0;" allowfullscreen=""
                                                     loading="lazy"></iframe>
@@ -539,7 +539,7 @@
                                         <div style="position: relative;">
                                             <img src="/website_elnoman/static/src/img/about_us_banner.png"
                                                  class="d-block img-fluid" alt="..."/>
-                                            <div class="service_banner_content">
+                                            <div class="service_banner_content wow bounceInDown">
                                                 <h2>عن النعمان</h2>
                                                 <p class="text-center">توفر الشركة أعلى مستويات الجودة و الإحترافية في
                                                     تقديم خدماتها التخصصية , ابتداءاً من خدمات ما بعد البيع , بما فى دلك
@@ -736,8 +736,19 @@
                                         <!--                                                <t t-set="_classes">mt-2 ml-md-2</t>-->
                                         <!--                                            </t>-->
                                         <!--                                        </div>-->
+<!--                                        <div class="row mt-5">-->
+<!--                                            <div class="col-md-12 text-center">-->
+<!--                                                <div class="pagination_products">-->
+<!--                                                    <a href="#">&gt;&gt;</a>-->
+<!--                                                    <a href="#" class="active">1</a>-->
+<!--                                                    <a href="#">2</a>-->
+<!--                                                    <a href="#">3</a>-->
+<!--                                                    <a href="#">&lt;&lt;</a>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
 
-                                        <div class="products_pager form-inline justify-content-center mt-3">
+                                        <div class="products_pager pagination_products form-inline justify-content-center mt-3">
                                             <ul>
                                                 <li t-attf-class="prev #{'active' if pager['page']['num'] == 1 else '' }">
                                                     <a class="page-link"
@@ -907,7 +918,7 @@
                                         <div style="position: relative;">
                                             <img src="/website_elnoman/static/src/img/products_banner.png"
                                                  class="d-block img-fluid" alt="..."/>
-                                            <div class="service_banner_content">
+                                            <div class="service_banner_content wow bounceInDown">
                                                 <h2>منتجاتنا</h2>
                                                 <p class="text-center">تقدم شركة نعمان منتجات عالية المستوى لشركات
                                                     عالمية معروفة لها مسار طويل في طب العيون
@@ -1060,7 +1071,7 @@
                                         <div style="position: relative;">
                                             <img src="/website_elnoman/static/src/img/service_banner.png"
                                                  class="d-block img-fluid" alt="..."/>
-                                            <div class="service_banner_content">
+                                            <div class="service_banner_content wow bounceInDown">
                                                 <h2>خدماتنا</h2>
                                                 <p>يعلم كل فرد أنه فقط من خلال التعاون الكامل والعمل معًا سيأخذنا إلى
                                                     آفاق جديدة. يبقى هدفنا تقديم أفضل خدمة وتطبيقها على جميع عملائنا في
@@ -1071,11 +1082,11 @@
 
                                         </div>
                                         <div class="row mt-5">
-                                            <div class="col-md-5">
+                                            <div class="col-md-5 service_page_grid_details">
                                                 <img src="/website_elnoman/static/src/img/service2.png"
                                                      class="d-block img-fluid" alt="..."/>
                                             </div>
-                                            <div class="offset-md-1 col-md-5">
+                                            <div class="offset-md-1 col-md-5 service_page_grid_details">
                                                 <div class="service_details_content">
                                                     <h4>التركيب</h4>
                                                     <p>يتم تركيب المعدات بأقصى درجات الأمان والامتثال
@@ -1084,7 +1095,7 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-md-5 service_page_grid_details">
                                                 <div class="service_details_content">
                                                     <h4>التدريب</h4>
                                                     <p>المهندسين المؤهلين / أخصائي المنتج / التطبيق يوفر
@@ -1092,15 +1103,15 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="offset-md-1 col-md-5">
+                                            <div class="offset-md-1 col-md-5 service_page_grid_details">
                                                 <img src="/website_elnoman/static/src/img/service1.png"
                                                      class="d-block img-fluid" alt="..."/>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-md-5 service_page_grid_details">
                                                 <img src="/website_elnoman/static/src/img/service3.png"
                                                      class="d-block img-fluid" alt="..."/>
                                             </div>
-                                            <div class="offset-md-1 col-md-5">
+                                            <div class="offset-md-1 col-md-5 service_page_grid_details">
                                                 <div class="service_details_content">
                                                     <h4>خدمة</h4>
                                                     <p>بعد التثبيت ، يتوفر دعم الخدمة لدينا دائمًا لتوفير أقصى قدر من
@@ -1154,7 +1165,7 @@
                                         <div style="position: relative;">
                                             <img src="/website_elnoman/static/src/img/riews_bg.png"
                                                  class="d-block img-fluid" alt="..."/>
-                                            <div class="service_banner_content">
+                                            <div class="service_banner_content wow bounceInDown">
                                                 <h2>آراء عملاؤنا</h2>
                                                 <p class="text-center">يتم استخدام نص لوريم إيبسوم لأنها تعطي توزيعاَ
                                                     طبيعياَ للأحرفالموجودة في اللغة العربية بدلا من أو وضاً عن استخدام
@@ -1314,7 +1325,7 @@
                                     <div class="container">
                                         <div style="position: relative;">
                                             <img src="/website_elnoman/static/src/img/contact_us_bg.png" class="d-block img-fluid" alt="..."/>
-                                            <div class="service_banner_content">
+                                            <div class="service_banner_content wow bounceInDown">
                                                 <h2>تواصل معنا</h2>
                                                 <p class="text-center">توفر مجموعة النعمان دعم وخدمة عملاء متاحة علي مدار ساعات العمل </p>
                                             </div>

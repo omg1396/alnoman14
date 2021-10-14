@@ -47,7 +47,6 @@ html
 }
 #top.o_header_affixed nav.pages_nav{
     background: #ffffff;
-    left: -15px !important;
     position: absolute;
     width: 100%;
 }
@@ -146,6 +145,7 @@ li.contact_information_social_icons {
     list-style: none;
     background: #00aeef;
     border-radius: 5px;
+    display: inline-block;
 }
 /*nav*/
 a.logo{
@@ -760,7 +760,7 @@ button.btn.form_btn.btn-lg.login_in_btn, .register_btn, .forget_pass_login {
 }
 /************************/
 .product_list_grid{
-    padding: 3rem 7rem;
+    padding: 3rem 3rem;
     border-radius: 40px;
     box-shadow: 0 0 14px 0 rgb(0 0 0 / 10%);
     background-color: #fff;
@@ -769,7 +769,7 @@ button.btn.form_btn.btn-lg.login_in_btn, .register_btn, .forget_pass_login {
     transition: all .3s;
 }
 .product_list_grid:hover{
-    padding: 2rem 5rem;
+    padding: 2rem 2rem;
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 174, 239, 0.2);
 }
@@ -777,14 +777,31 @@ button.btn.form_btn.btn-lg.login_in_btn, .register_btn, .forget_pass_login {
     text-align: center;
     color: #22242a !important;
     margin-top: 20px;
+    bottom: 50px;
+    position: absolute;
+    left: 15%;
+    right: 15%;
 }
 .product_list_grid:hover h5{
     display: none;
 }
 .pagination_products {
-  display: inline-block;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
 }
-.pagination_products a.active {
+.pagination_products ul {
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+/*
+.pagination_products li {
+    float: left;
+}*/
+.pagination_products li.active a{
     background: #00aeef;
     color: #fff;
 }

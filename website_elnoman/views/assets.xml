@@ -6,13 +6,13 @@
         <!-- Libraries CSS Files -->
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <!-- stylesheet -->
-<!--        <link href="/website_elnoman/static/src/lib/animate/animate.css" rel="stylesheet" type="text/css"/>-->
+        <link href="/website_elnoman/static/src/lib/animate/animate.css" rel="stylesheet" type="text/css"/>
         <link href="/website_elnoman/static/src/css/owl.carousel.css" rel="stylesheet" type="text/css"/>
         <link href="/website_elnoman/static/src/css/style.css" rel="stylesheet" type="text/css"/>
-<!--        <link href="/website_elnoman/static/src/css/responsive.css" rel="stylesheet" type="text/css"/>-->
+        <link href="/website_elnoman/static/src/css/responsive.css" rel="stylesheet" type="text/css"/>
 
 
-<!--        <script src="/website_elnoman/static/src/lib/wow/wow.min.js" type="text/javascript" ></script>-->
+        <script src="/website_elnoman/static/src/lib/wow/wow.min.js" type="text/javascript" ></script>
         <script src="/website_elnoman/static/src/js/owl.carousel.min.js" type="text/javascript" ></script>
         <script src="/website_elnoman/static/src/js/script.js" type="text/javascript" ></script>
 
