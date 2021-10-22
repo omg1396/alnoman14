@@ -21,7 +21,7 @@
 #############################################################################
 
 from odoo import api, fields, models
-import odoo.addons.decimal_precision as dp
+from odoo.addons.base.models import decimal_precision as dp
 
 
 class SaleOrder(models.Model):

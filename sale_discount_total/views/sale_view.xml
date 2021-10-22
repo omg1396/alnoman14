@@ -36,7 +36,7 @@
                 </xpath>
                 <!-- Roundoff the discount field -->
                 <xpath expr="//field[@name='order_line']/tree/field[@name='discount']" position="attributes">
-                    <attribute name="digits">[16, 2]</attribute>
+                    <attribute name="digits">[16, 3]</attribute>
                 </xpath>
             </field>
         </record>
