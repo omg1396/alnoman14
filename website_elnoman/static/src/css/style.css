@@ -50,6 +50,9 @@ html
     position: absolute;
     width: 100%;
 }
+html #wrapwrap .o_header_affixed {
+    margin-left: -18px !important;
+}
 #top nav.pages_nav .nav-item .nav-link{
     color: #000 !important;
     font-weight: 400;
@@ -224,7 +227,7 @@ div#o_logout_divider {
     text-decoration: none !important;
 }
 nav .navbar-nav .nav-item .dropdown-menu a.dropdown-item:hover, .langs_dropdown ul li a:hover{
-    color: #ffffff;
+    color: #fff !important;
     background: #0174bf;
 }
 /* header*/
@@ -565,6 +568,51 @@ section.home_service_sec {
     background: #fafafa;
     padding: 2rem 0;
 }
+.home_clients_bg_sec{
+    background-image: url("../img/home_client_bg.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 9rem 0 !important;
+}
+.home_page_map,.contact_page_map{
+    position: relative;
+}
+.home_page_map:after{
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 85px;
+    bottom: 90px;
+    right: -53px;
+    background: #3baff0;
+}
+.contact_page_map:after{
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 85px;
+    bottom: 58px;
+    right: 36px;
+    background: #3baff0;
+}
+.home_page_map:before{
+    position: absolute;
+    content: "";
+    width: 85px;
+    height: 9px;
+    bottom: 81px;
+    right: -53px;
+    background: #3baff0;
+}
+.contact_page_map:before{
+    position: absolute;
+    content: "";
+    width: 85px;
+    height: 9px;
+    bottom: 49px;
+    right: 36px;
+    background: #3baff0;
+}
 /*************Service page *******************/
 .service_banner_sec{
     background-image: url("../img/page_bg.png");
@@ -731,11 +779,14 @@ input.form-control.o_website_form_input.custom_contact_us_form,textarea.o_websit
 button.btn.form_btn.btn-lg.login_in_btn, .register_btn, .forget_pass_login {
     padding: 0.5rem 4.5rem;
     color: #fff !important;
-    background: #0c629f;
+    background: #0c629f !important;
     border-radius: 20px;
     text-decoration: none!important;
     font-size: 14px;
     margin: 20px 0;
+}
+.js_usermenu.show .dropdown-item{
+    color: #3baff0 !important;
 }
 .oe_login_buttons .justify-content-between.mt-2 a[href="/web/signup?"],.oe_login_buttons button[value="/web/become"],.sign_up_page_login,.oe_login_buttons .text-center.mt-3 a{
     text-align: center !important;
@@ -910,3 +961,59 @@ p.contact_information_item_label {
     border-color: #f2f2f2 !important;
     border: unset !important;
 }
+
+/*********** language ***********/
+.langs_dropdown p {
+    font-size: 14px;
+    color: #000 !important;
+    margin-top: 15px;
+    line-height: .9;
+    margin-right: 15px;
+    position: relative;
+    font-weight: 600;
+}
+.langs_dropdown {
+    position: relative;
+    cursor: pointer;
+}
+.langs_dropdown ul {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width: 130px;
+    z-index: 9;
+    display: none;
+    text-align: left;
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+.o_header_affix .langs_dropdown ul {
+    position: absolute;
+    background-color: #fff;
+    left: -15px;
+    width: 130px;
+    z-index: 9;
+    display: none;
+    top: 49px;
+}
+.langs_dropdown ul li {
+    display: block;
+    margin: 0;
+}
+.langs_dropdown ul li a {
+    padding: 10px;
+    display: block;
+    color: #3baff0 !important;
+    position: relative;
+    text-decoration: none!important;
+    font-size: 13px;
+}
+.langs_dropdown ul li:last-child a {
+    border-bottom: none;
+}
+.choose_lang i{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+/*********** language ***********/

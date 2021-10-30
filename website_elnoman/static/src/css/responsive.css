@@ -15,9 +15,17 @@
     }
 }
 @media(max-width: 1199px){
-
+    .home_page_map iframe{
+       width: 508px;
+    }
+    .contact_page_map iframe{
+      width: 324px;
+    }
 }
 @media (max-width: 991px){
+    .home_page_map iframe {
+        width: 389px;
+    }
     .home_slider_content {
         top: 35%;
     }
@@ -32,9 +40,15 @@
         margin-top: 2rem !important;
         width: 100%;
     }
+   .contact_page_map:before,.contact_page_map:after {
+      display: none;
+    }
 }
 
 @media (max-width: 767px){
+    .home_page_map:before, .home_page_map:after{
+        display: none !important;
+    }
     .footer_grid_col {
         margin-top: 1rem;
         text-align: center !important;

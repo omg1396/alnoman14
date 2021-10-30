@@ -28,6 +28,25 @@
                                     </t>
                                 </t>
                             </t>
+                            <div class="langs_dropdown_container text-right">
+                                <div class="langs_dropdown">
+                                    <p class="choose_lang">
+                                        <t t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()" />
+                                        <i class="fa fa-angle-down ml-2"></i>
+                                        <ul class="list-unstyled langs_menu nav_menu_language" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                            <t t-foreach="languages" t-as="lg">
+                                                <li>
+                                                    <a class="menu_footer_pages" t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])" t-att-data-url_code="lg[1]">
+                                                        <t t-esc="lg[2].split('/').pop()"/>
+                                                    </a>
+                                                </li>
+                                            </t>
+                                        </ul>
+                                    </p>
+                                </div>
+
+                            </div>
+
                             <!-- Sign In -->
                             <t t-call="portal.placeholder_user_sign_in">
                                 <t t-set="_item_class" t-value="'nav-item ml-lg-auto'"/>
@@ -40,24 +59,6 @@
                                 <t t-set="_link_class" t-value="'nav-link font-weight-bold'"/>
                             </t>
                         </div>
-                        <!--                        <div class="langs_dropdown_container text-right">-->
-                        <!--                                <div class="langs_dropdown">-->
-                        <!--                                    <p class="choose_lang">-->
-                        <!--                                        <t t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][2].split('/').pop()" />-->
-                        <!--                                        <i class="fa fa-angle-down ml-2"></i>-->
-                        <!--                                        <ul class="list-unstyled langs_menu nav_menu_language" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">-->
-                        <!--                                            <t t-foreach="languages" t-as="lg">-->
-                        <!--                                                <li>-->
-                        <!--                                                    <a class="menu_footer_pages" t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])" t-att-data-url_code="lg[1]">-->
-                        <!--                                                        <t t-esc="lg[2].split('/').pop()"/>-->
-                        <!--                                                    </a>-->
-                        <!--                                                </li>-->
-                        <!--                                            </t>-->
-                        <!--                                        </ul>-->
-                        <!--                                    </p>-->
-                        <!--                                </div>-->
-
-                        <!--                            </div>-->
 
                         <!-- Button -->
                         <div class="oe_structure" id="oe_structure_header_default_1"/>
@@ -152,16 +153,16 @@
                             <div class="col-md-4 text-right">
                                 <ul class="p-0 m-0">
                                     <li class="footer_list_copyrights footer_list_copyrights_terms ">
-                                        <a t-att-href="website.social_facebook" target="_blank">terms &amp; conditions</a>
+                                        <a t-att-href="website.social_facebook" target="_blank">Terms &amp; Conditions</a>
                                     </li>
                                     <li class="footer_list_copyrights">
-                                        <a t-att-href="website.social_facebook" target="_blank">privacy policy</a>
+                                        <a t-att-href="website.social_facebook" target="_blank">Privacy Policy</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="col-md-4 text-center">
-                                <p class="m-0">© elnoman ltd. all rights reserved</p>
+                                <p class="m-0">© Elnoman LTD. All Rights Reserved</p>
                             </div>
                         </div>
                     </footer>
@@ -266,7 +267,7 @@
                                         </div>
                                         <div class="form-group text-center">
                                             <p>لديكم حساب بالفعل
-                                            <a class="sign_up_page_login" href="/web/login">تسجيل الدخول</a></p>
+                                                <a class="sign_up_page_login" href="/web/login">تسجيل الدخول</a></p>
                                         </div>
                                         <p class="alert alert-danger" t-if="error" role="alert">
                                             <t t-esc="error"/>

@@ -150,7 +150,7 @@
                                     </div>
                                 </div>
                             </section>
-                            <section class="home_client_sec p-5">
+                            <section class="home_client_sec home_clients_bg_sec p-5">
                                 <div class="container">
                                     <div class="client_reviews_content_title text-center">
                                         <h3>آراء عملاؤنا المتميزون</h3>
@@ -224,8 +224,8 @@
                             <section class="oe_structure home_service_sec">
                                 <div class="container">
                                     <div class="col-12 home_service_container">
-                                        <a href="/products" style="text-decoration: none;">
-                                            <h3>شركاؤنا</h3>
+                                        <a href="/latest_product" style="text-decoration: none;">
+                                            <h3>وصل حديثا</h3>
                                         </a>
                                         <p>وصف دقيق لما يقدمه المحتوي عن موقع النعمان</p>
                                     </div>
@@ -461,7 +461,7 @@
                                                             <div class="form-group form-field o_website_form_required_custom">
                                                                 <input type="text"
                                                                        class="form-control o_website_form_input custom_contact_us_form"
-                                                                       placeholder="اﻷسم" name="contact_name"
+                                                                       placeholder="الاسم" name="contact_name"
                                                                        required=""/>
                                                             </div>
                                                         </div>
@@ -484,7 +484,7 @@
                                                             <div class="form-group form-field o_website_form_custom o_website_form_required_custom">
                                                                 <textarea
                                                                         class="form-control o_website_form_input custom_contact_us_form"
-                                                                        rows="7" placeholder="الرساله"
+                                                                        rows="7" placeholder="الرسالة"
                                                                         name="description" required=""/>
                                                             </div>
                                                         </div>
@@ -1164,7 +1164,7 @@
                                         </div>
                                     </div>
                                 </section>
-                                <section class="home_client_sec p-5">
+                                <section class="home_client_sec home_clients_bg_sec p-5">
                                     <div class="container">
                                         <div class="client_reviews_content_title text-center">
                                             <h3>آراء عملاؤنا المتميزون</h3>
@@ -1310,7 +1310,7 @@
                                                                 <div class="form-group form-field o_website_form_required_custom">
                                                                     <input type="text"
                                                                            class="form-control o_website_form_input custom_contact_us_form_page"
-                                                                           placeholder="اﻷسم" name="contact_name"
+                                                                           placeholder="الاسم" name="contact_name"
                                                                            required=""/>
                                                                 </div>
                                                             </div>
@@ -1342,7 +1342,7 @@
                                                                 <div class="form-group form-field o_website_form_custom o_website_form_required_custom">
                                                                     <textarea
                                                                             class="form-control o_website_form_input custom_contact_us_form_page"
-                                                                            rows="9" placeholder="الرساله"
+                                                                            rows="9" placeholder="الرسالة"
                                                                             name="description" required=""/>
                                                                 </div>
                                                             </div>
@@ -1402,7 +1402,7 @@
                                                             </div>
                                                         </li>
                                                     </ul>
-                                                    <div>
+                                                    <div class="contact_page_map">
                                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.090620448327!2d13.133653715184321!3d32.86932168094414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8ecfba35226dd%3A0x34b36da79436449!2sHay%20Al%20Andalus%20Municipality!5e0!3m2!1sen!2seg!4v1633087913929!5m2!1sen!2seg"
                                                                 width="400" height="300"
                                                                 style="border:0; margin-bottom: 50px;"
