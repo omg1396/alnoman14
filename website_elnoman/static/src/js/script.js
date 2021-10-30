@@ -3,6 +3,7 @@ $(function () {
     $('.home_products_slider').owlCarousel({
         loop:true,
         margin:10,
+        autoplay:true,
         center:true,
         dots:true,
         responsive:{

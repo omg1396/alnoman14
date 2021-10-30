@@ -21,6 +21,7 @@
     .contact_page_map iframe{
       width: 324px;
     }
+
 }
 @media (max-width: 991px){
     .home_page_map iframe {
@@ -42,6 +43,11 @@
     }
    .contact_page_map:before,.contact_page_map:after {
       display: none;
+    }
+    #top_menu_collapse .langs_dropdown_container{
+        text-align: left !important;
+        margin-left: 15px;
+
     }
 }
 
@@ -97,6 +103,9 @@
     .service_banner_content h2 {
         font-size: 16px;
         font-weight: 900;
+    }
+    .sign_in_banner_bg .service_head_contain {
+        margin-top: 0%;
     }
 }
 

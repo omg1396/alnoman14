@@ -191,10 +191,6 @@ outline:0;
     transition: all 0.3s;
 
 }
-.total_pages .nav-item.dropdown:last-child{
-    position: absolute;
-    right: 217px;
-}
 nav .navbar-nav .nav-item .dropdown-menu{
     border-radius: 0;
     padding: 1.5rem 0 1.5rem !important;
