@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_website_elnoman_customer_review,website_elnoman.customer_review,model_customer_review,base.group_user,1,1,1,1
+access_website_elnoman_product_properties,website_elnoman.product_properties,model_product_properties,base.group_user,1,1,1,1
