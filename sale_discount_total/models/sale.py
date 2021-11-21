@@ -27,25 +27,28 @@ from odoo.addons.base.models import decimal_precision as dp
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
-    @api.depends('order_line.price_total')
+    @api.depends('order_line.price_total', 'discount_type', 'discount_rate')
     def _amount_all(self):
         """
         Compute the total amounts of the SO.
         """
-     
+
         for order in self:
             amount_untaxed = amount_tax = amount_discount = amount_before_discount = amount_discount_total = 0.0
             for line in order.order_line:
                 amount_discount_total += line.price_subtotal
                 amount_untaxed += line.product_uom_qty * line.price_unit
                 amount_tax += line.price_tax
-                amount_discount += (line.product_uom_qty * line.price_unit * line.discount) / 100
+                if self.discount_type == 'amount':
+                    amount_discount = self.discount_rate
+                else:
+                    amount_discount += (line.product_uom_qty * line.price_unit * line.discount) / 100
             order.update({
                 # 'amount_before_discount': amount_before_discount,
                 'amount_untaxed': amount_untaxed,
                 'amount_tax': amount_tax,
                 'amount_discount': amount_discount,
-                'amount_total': amount_discount_total + amount_tax ,
+                'amount_total': amount_discount_total + amount_tax,
             })
 
     discount_type = fields.Selection([('percent', 'Percentage'), ('amount', 'Amount')], string='Discount type',
@@ -63,8 +66,9 @@ class SaleOrder(models.Model):
     amount_discount = fields.Monetary(string='Discount', store=True, readonly=True, compute='_amount_all',
                                       digits=dp.get_precision('Account'), track_visibility='always')
 
-    amount_before_discount = fields.Monetary(string='Amount Before Discount', store=True, readonly=True, compute='_amount_all',
-                                      digits=dp.get_precision('Account'), track_visibility='always')
+    amount_before_discount = fields.Monetary(string='Amount Before Discount', store=True, readonly=True,
+                                             compute='_amount_all',
+                                             digits=dp.get_precision('Account'), track_visibility='always')
 
     @api.onchange('discount_type', 'discount_rate', 'order_line')
     def supply_rate(self):
