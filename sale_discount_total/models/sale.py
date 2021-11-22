@@ -48,7 +48,7 @@ class SaleOrder(models.Model):
                 'amount_untaxed': amount_untaxed,
                 'amount_tax': amount_tax,
                 'amount_discount': amount_discount,
-                'amount_total': amount_discount_total + amount_tax,
+                'amount_total': (amount_untaxed - amount_discount)+amount_tax,
             })
 
     discount_type = fields.Selection([('percent', 'Percentage'), ('amount', 'Amount')], string='Discount type',
