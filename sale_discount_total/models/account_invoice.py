@@ -95,13 +95,17 @@ class AccountInvoice(models.Model):
                 sign = 1
             else:
                 sign = -1
-            if move.discount_type == 'percent':
-                move.amount_discount = sum((line.quantity * line.price_unit * line.discount) / 100 for line in move.invoice_line_ids)
+            if move.discount_rate:
+                if move.discount_type == 'percent':
+                    move.amount_discount = sum((line.quantity * line.price_unit * line.discount) / 100 for line in move.invoice_line_ids)
+                    move.amount_total = sign * (total_currency if len(currencies) == 1 else total)
+                else:
+                    move.amount_discount = move.discount_rate
+                    move.amount_total = sum((line.quantity * line.price_unit) for line in move.invoice_line_ids) - move.amount_discount
             else:
-                move.amount_discount = move.discount_rate
+                move.amount_total = sign * (total_currency if len(currencies) == 1 else total)
             move.amount_untaxed = sign * (total_untaxed_currency if len(currencies) == 1 else total_untaxed)
             move.amount_tax = sign * (total_tax_currency if len(currencies) == 1 else total_tax)
-            move.amount_total = sign * (total_currency if len(currencies) == 1 else total)
             move.amount_residual = -sign * (total_residual_currency if len(currencies) == 1 else total_residual)
             move.amount_untaxed_signed = -total_untaxed
             move.amount_tax_signed = -total_tax
@@ -154,7 +158,7 @@ class AccountInvoice(models.Model):
                 else:
                     total = discount = 0.0
                     for line in inv.invoice_line_ids:
-                        total += (line.quantity * line.price_unit)
+                        total += round(line.quantity * line.price_unit)
                     if inv.discount_rate != 0:
                         discount = (inv.discount_rate / total) * 100
                     else:
