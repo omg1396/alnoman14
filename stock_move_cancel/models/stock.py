@@ -13,24 +13,27 @@ class MoveCancel(models.TransientModel):
     _name = 'stock.move.cancel'
     _description = 'Stock move cancel'
 
-    delete_move = fields.Boolean(string='Delete selected stock moves and related quants movements.' )
+    delete_move = fields.Boolean(string='Delete selected stock moves and related quants movements.')
     cancel_move = fields.Boolean(string='Cancel selected stock moves and delete related quants movements.')
 
     def delete_move_lines(self):
+
         move_obj = self.env['stock.move']
         moves = move_obj.browse(self._context.get('active_ids', []))
-        move_lines_ids = moves.mapped('move_line_ids')
-        move_line_query = """
-        DELETE FROM stock_move_line
-        WHERE id in %s ;
-        """
-        self.env.cr.execute(move_line_query,[tuple(move_lines_ids.ids)])
+        canceled_picking_moves = moves.filtered(lambda m: m.picking_id.state == 'cancel')
+        if canceled_picking_moves:
+            move_lines_ids = canceled_picking_moves.mapped('move_line_ids')
+            move_line_query = """
+            DELETE FROM stock_move_line
+            WHERE id in %s ;
+            """
+            self.env.cr.execute(move_line_query,[tuple(move_lines_ids.ids)])
 
-        move_query = """
-                DELETE FROM stock_move
-                WHERE id in %s;
-                """
-        self.env.cr.execute(move_query,[tuple(moves.ids)])
+            move_query = """
+                    DELETE FROM stock_move
+                    WHERE id in %s;
+                    """
+            self.env.cr.execute(move_query,[tuple(canceled_picking_moves.ids)])
 
         return True
 
@@ -51,50 +54,54 @@ class MoveCancel(models.TransientModel):
         move_obj = self.env['stock.quant']
         moves = move_obj.browse(self._context.get('active_ids', []))
         for move in moves:
-            if move.quantity == -move.available_quantity:
+            if move.quaproduct_uom_qtyntity == -move.available_quantity:
                 move.available_quantity = move.quantity
     
     def action_cancel(self):
-        self._action_cancel()
-
-    def _action_cancel(self):
-        '''if any(move.state == 'done' for move in self):
-            raise UserError(_('You cannot cancel a stock move that has been set to \'Done\'.'))'''
         move_obj = self.env['stock.move']
         moves = move_obj.browse(self._context.get('active_ids', []))
         for move in moves:
-            inventory_adj_location_id = move.product_id.property_stock_inventory.id
-            if move.location_dest_id.id == inventory_adj_location_id or move.location_id.id == inventory_adj_location_id:
-                orign_state = move.state
-                if move.state not in ['done', 'cancel']:
-                    for ml in move.move_line_ids:
-                        ml.product_uom_qty = 0.0
-                    # move._do_unreserve()
-                # siblings_states = (move.move_dest_ids.mapped('move_orig_ids') - move).mapped('state')
-                # if move.propagate_cancel:
-                #     # only cancel the next move if all my siblings are also cancelled
-                #     if all(state == 'cancel' for state in siblings_states):
-                #         move.move_dest_ids._action_cancel()
-                # else:
-                #     if all(state in ('done', 'cancel') for state in siblings_states):
-                #         move.move_dest_ids.write({'procure_method': 'make_to_stock'})
-                #         move.move_dest_ids.write({'move_orig_ids': [(3, move.id, 0)]})
+            if move.picking_id.state == 'cancel':
+                move._action_cancel()
 
-                if orign_state == 'done' and move.location_id.id == inventory_adj_location_id:
-                    inv_quant = self.env['stock.quant'].sudo().search(
-                        [('product_id', '=', move.product_id.id), ('location_id', '=', move.location_dest_id.id)])
-                    if inv_quant:
-                        old_qty = inv_quant[0].quantity
-                        inv_quant[0].quantity = old_qty - move.product_uom_qty
-                        if inv_quant[0].quantity == 0:
-                            inv_quant[0].unlink()
-                elif orign_state == 'done' and move.location_dest_id.id == inventory_adj_location_id:
-                    inv_quant = self.env['stock.quant'].sudo().search(
-                        [('product_id', '=', move.product_id.id), ('location_id', '=', move.location_id.id)])
-                    if inv_quant:
-                        old_qty = inv_quant[0].quantity
-                        inv_quant[0].quantity = old_qty + move.product_uom_qty
-                move.write({'state': 'cancel', 'move_orig_ids': [(5, 0, 0)]})
+    # def _action_cancel(self):
+    #     '''if any(move.state == 'done' for move in self):
+    #         raise UserError(_('You cannot cancel a stock move that has been set to \'Done\'.'))'''
+    #     move_obj = self.env['stock.move']
+    #     moves = move_obj.browse(self._context.get('active_ids', []))
+    #     for move in moves:
+    #         inventory_adj_location_id = move.product_id.property_stock_inventory.id
+    #         if move.location_dest_id.id == inventory_adj_location_id or move.location_id.id == inventory_adj_location_id:
+    #             orign_state = move.state
+    #             if move.state not in ['done', 'cancel']:
+    #                 for ml in move.move_line_ids:
+    #                     ml.product_uom_qty = 0.0
+    #                 # move._do_unreserve()
+    #             # siblings_states = (move.move_dest_ids.mapped('move_orig_ids') - move).mapped('state')
+    #             # if move.propagate_cancel:
+    #             #     # only cancel the next move if all my siblings are also cancelled
+    #             #     if all(state == 'cancel' for state in siblings_states):
+    #             #         move.move_dest_ids._action_cancel()
+    #             # else:
+    #             #     if all(state in ('done', 'cancel') for state in siblings_states):
+    #             #         move.move_dest_ids.write({'procure_method': 'make_to_stock'})
+    #             #         move.move_dest_ids.write({'move_orig_ids': [(3, move.id, 0)]})
+    #
+    #             if orign_state == 'done' and move.location_id.id == inventory_adj_location_id:
+    #                 inv_quant = self.env['stock.quant'].sudo().search(
+    #                     [('product_id', '=', move.product_id.id), ('location_id', '=', move.location_dest_id.id)])
+    #                 if inv_quant:
+    #                     old_qty = inv_quant[0].quantity
+    #                     inv_quant[0].quantity = old_qty - move.product_uom_qty
+    #                     if inv_quant[0].quantity == 0:
+    #                         inv_quant[0].unlink()
+    #             elif orign_state == 'done' and move.location_dest_id.id == inventory_adj_location_id:
+    #                 inv_quant = self.env['stock.quant'].sudo().search(
+    #                     [('product_id', '=', move.product_id.id), ('location_id', '=', move.location_id.id)])
+    #                 if inv_quant:
+    #                     old_qty = inv_quant[0].quantity
+    #                     inv_quant[0].quantity = old_qty + move.product_uom_qty
+    #             move.write({'state': 'cancel', 'move_orig_ids': [(5, 0, 0)]})
 
 
             # if move.picking_id.state == 'done' or 'confirmed':
@@ -129,9 +136,19 @@ class MoveCancel(models.TransientModel):
 
         
 
-
-
     def remove_move(self):
+        move_obj = self.env['stock.move']
+        moves = move_obj.browse(self._context.get('active_ids', []))
+        for move in moves:
+            if move.picking_id.state == 'cancel':
+                try:
+                    move._action_cancel()
+                except:
+                    move_line_query = """
+                        DELETE FROM stock_move
+                    """
+
+    def old_remove_move(self):
         '''remove moves also related quants.'''
         move_obj = self.env['stock.move']
         moves = move_obj.browse(self._context.get('active_ids', []))
