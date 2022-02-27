@@ -244,25 +244,27 @@
             <xpath expr="//div[@id='informations']" position="replace">
             </xpath>
             <xpath expr="//div[@class='page']" position="before">
-                <div class="text-left" style="margin-left:60px;">
+                <div class="text-right" style="margin-left:60px;">
                     <t t-if="o.move_type == 'out_invoice'">
                         <h4>فاتورة مبيعات</h4>
                     </t>
                 </div>
                 <div class="row table_header mb-2" style="margin-top:5px">
                     <div class="col-6 text-left" width="50%">
+
+                        <strong > اسم العميل : </strong>
                         <span t-field="o.partner_id.name"/>
-                        <strong >: اسم العميل</strong>
                         <br/>
+                        <strong >المدينة : </strong>
                         <span t-field="o.partner_id.city"/>
-                        <strong >: المدينة</strong>
+
                     </div>
                     <div class="col-6 text-right" width="50%">
+                        <strong>رقم : </strong>
                         <span t-field="o.name" style="margin-left:0px;"/>
-                        <strong>: رقم</strong>
                         <br/>
+                        <strong>المصدر : </strong>
                         <span t-field="o.invoice_origin" style="margin-left:75px;"/>
-                        <strong>: المصدر</strong>
                         <br/>
                         <strong>تاريخ الفاتورة :</strong>
                         <span t-field="o.invoice_date"/>
