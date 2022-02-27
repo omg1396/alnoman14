@@ -250,7 +250,7 @@
                     </t>
                 </div>
                 <div class="row table_header mb-2" style="margin-top:5px">
-                    <div class="col-6 text-left" width="50%">
+                    <div class="col-6 text-right" width="50%">
                         <span t-field="o.name" style="margin-left:0px;"/>
                         <strong>: رقم</strong>
                         <br/>
@@ -263,12 +263,12 @@
                         <strong>تاريخ الفاتورة :</strong>
                         <span t-field="o.invoice_date"/>
                     </div>
-                    <div class="col-6 text-right" width="50%">
+                    <div class="col-6 text-left" width="50%">
                         <span t-field="o.partner_id.name"/>
-                        <strong style="position:static;float:right;">: اسم العميل</strong>
+                        <strong >: اسم العميل</strong>
                         <br/>
                         <span t-field="o.partner_id.city"/>
-                        <strong style="position:static;float:right;">: المدينة</strong>
+                        <strong >: المدينة</strong>
                     </div>
                 </div>
                 <br/>
@@ -372,7 +372,7 @@
             <xpath expr="//div[@class='clearfix']" position="replace">
                 <div class="clearfix">
                     <div id="total" class="row">
-                        <div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-6'} ">
+                        <div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-6'} ml-auto">
                             <table class="table table-sm" style="page-break-inside: avoid;">
                                 <tr class="border-black o_subtotal" style="">
                                     <td class="text-left">
@@ -456,7 +456,7 @@
                     </div>
                 </div>
                 <br/>
-                <h6 class="text-right"> : ملاحظة</h6>
+                <h6 class="text-left"> : ملاحظة</h6>
             </xpath>
             <xpath expr="//div[@class='page']" position="attributes">
                 <attribute name="style" add="font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;"
@@ -502,8 +502,8 @@
                 <th name="th_description" class="text-center">الوصف</th>
             </xpath>
             <xpath expr="//th[@name='th_description']" position="before">
-                <th name="th_default_code">
-                    <strong>رقم</strong>
+                <th name="th_default_code" class="text-center">
+                    <strong>م</strong>
                 </th>
                 <th name="th_default_code" class="text-center">رقم الصنف</th>
             </xpath>
