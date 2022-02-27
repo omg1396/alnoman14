@@ -250,6 +250,13 @@
                     </t>
                 </div>
                 <div class="row table_header mb-2" style="margin-top:5px">
+                    <div class="col-6 text-left" width="50%">
+                        <span t-field="o.partner_id.name"/>
+                        <strong >: اسم العميل</strong>
+                        <br/>
+                        <span t-field="o.partner_id.city"/>
+                        <strong >: المدينة</strong>
+                    </div>
                     <div class="col-6 text-right" width="50%">
                         <span t-field="o.name" style="margin-left:0px;"/>
                         <strong>: رقم</strong>
@@ -262,13 +269,6 @@
                         <br/>
                         <strong>تاريخ الفاتورة :</strong>
                         <span t-field="o.invoice_date"/>
-                    </div>
-                    <div class="col-6 text-left" width="50%">
-                        <span t-field="o.partner_id.name"/>
-                        <strong >: اسم العميل</strong>
-                        <br/>
-                        <span t-field="o.partner_id.city"/>
-                        <strong >: المدينة</strong>
                     </div>
                 </div>
                 <br/>
@@ -456,7 +456,7 @@
                     </div>
                 </div>
                 <br/>
-                <h6 class="text-left"> : ملاحظة</h6>
+                <h6 class="text-left">ملاحظة : </h6>
             </xpath>
             <xpath expr="//div[@class='page']" position="attributes">
                 <attribute name="style" add="font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;"
