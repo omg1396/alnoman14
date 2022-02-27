@@ -261,10 +261,10 @@
                     </div>
                     <div class="col-6 text-right" width="50%">
                         <strong>رقم : </strong>
-                        <span t-field="o.name" style="margin-left:0px;"/>
+                        <span t-field="o.name"/>
                         <br/>
                         <strong>المصدر : </strong>
-                        <span t-field="o.invoice_origin" style="margin-left:75px;"/>
+                        <span t-field="o.invoice_origin" style="margin-left:80px;"/>
                         <br/>
                         <strong>تاريخ الفاتورة :</strong>
                         <span t-field="o.invoice_date"/>
@@ -378,20 +378,22 @@
                             <table class="table table-sm" style="page-break-inside: avoid;">
                                 <tr class="border-black o_subtotal" style="">
                                     <td class="text-left">
-                                        <span t-field="o.amount_untaxed"/>
-                                    </td>
-                                    <td class="text-right">
                                         <strong >الإجمالي</strong>
                                     </td>
+                                    <td class="text-right">
+                                        <span t-field="o.amount_untaxed"/>
+                                    </td>
+
                                 </tr>
                                 <tr class="border-black o_subtotal" style="">
                                     <t t-if="o.amount_discount">
                                         <td class="text-left">
-                                            <span t-field="o.amount_discount"/>
-                                        </td>
-                                        <td class="text-right">
                                             <strong >التخفيض</strong>
                                         </td>
+                                        <td class="text-right">
+                                            <span t-field="o.amount_discount"/>
+                                        </td>
+
                                     </t>
                                 </tr>
                                 <t t-foreach="o.amount_by_group" t-as="amount_by_group">
@@ -419,11 +421,12 @@
                                 </t>
                                 <tr class="border-black o_total">
                                     <td class="text-left">
-                                        <span class="text-nowrap" t-field="o.amount_total"/>
-                                    </td>
-                                    <td class="text-right">
                                         <strong>الإجمالي الكلي</strong>
                                     </td>
+                                    <td class="text-right">
+                                        <span class="text-nowrap" t-field="o.amount_total"/>
+                                    </td>
+
                                 </tr>
 <!--                                <t t-if="print_with_payments">-->
 <!--                                    <t t-if="o.payment_state != 'invoicing_legacy'">-->
