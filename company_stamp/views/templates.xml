@@ -3,9 +3,9 @@
 
         <template id="quotation_report_add_stamp" inherit_id="sale.report_saleorder_document">
             <xpath expr="//table[hasclass('o_main_table')]" position="replace">
-                <table class="table table-sm o_main_table table-striped ">
+                <table class="table table-sm o_main_table table-striped">
                     <!-- In case we want to repeat the header, remove "display: table-row-group" -->
-                    <thead style="display: table-row-group">
+                    <thead>
                         <tr>
                             <th name="th_description" class="text-left">الوصف</th>
                             <th name="th_quantity" class="text-right">الكمية</th>
@@ -121,7 +121,7 @@
                         <span t-field="doc.date_order"/>
                     </div>
                 </div>
-                <br/>
+
             </xpath>
             <xpath expr="//div[@class='page']/h2" position="replace">
             </xpath>
@@ -143,23 +143,23 @@
             </xpath>
 
 
-            <xpath expr="//div[@name='so_total_summary']" position="after">
-                <br/>
-                <br/>
-                <div style="border:1px solid black;padding:5px;">
-                    <strong>الشروط والأحكام :</strong>
-                    <br/>
-                    <br/>
-                    <strong>1- صلاحية العرض شهر من تاريخه</strong>
-                    <br/>
-                    <strong>2- العرض لايشمل الضرائب</strong>
-                    <br/>
-                    <strong>3- التركيب والتدريب</strong>
-                    <br/>
-                    <strong>4- التسليم الفوري</strong>
-                </div>
+<!--            <xpath expr="//div[@name='so_total_summary']" position="after">-->
+<!--                <br/>-->
+<!--                <br/>-->
+<!--                <div style="border:1px solid black;padding:5px;">-->
+<!--                    <strong>الشروط والأحكام :</strong>-->
+<!--                    <br/>-->
+<!--                    <br/>-->
+<!--                    <strong>1- صلاحية العرض شهر من تاريخه</strong>-->
+<!--                    <br/>-->
+<!--                    <strong>2- العرض لايشمل الضرائب</strong>-->
+<!--                    <br/>-->
+<!--                    <strong>3- التركيب والتدريب</strong>-->
+<!--                    <br/>-->
+<!--                    <strong>4- التسليم الفوري</strong>-->
+<!--                </div>-->
 
-            </xpath>
+<!--            </xpath>-->
 
             <!--            <xpath expr="//div[@name='so_total_summary']" position="after">-->
             <!--                <br/>-->
@@ -805,12 +805,12 @@
             <field name="page_height">0</field>
             <field name="page_width">0</field>
             <field name="orientation">Portrait</field>
-            <field name="margin_top">25</field>
+            <field name="margin_top">30</field>
             <field name="margin_bottom">20</field>
             <field name="margin_left">5</field>
             <field name="margin_right">5</field>
             <field name="header_line" eval="False"/>
-            <field name="header_spacing">20</field>
+            <field name="header_spacing">27</field>
             <field name="dpi">90</field>
         </record>
 
