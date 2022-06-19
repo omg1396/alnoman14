@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_account_config_inherit" model="ir.ui.view">
+            <field name="name">Accounting settings</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@data-key='account']" position="inside">
+                    <h2>Loan Accounts </h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 ">
+                            <div class="o_setting_left_pane">
+                                <label for="treasury_account"/>
+                                <div class="text-muted">
+                                    Treasury Account
+                                </div>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <field name="treasury_account"/>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-6 ">
+                            <div class="o_setting_left_pane">
+                                <label for="loan_account"/>
+                                <div class="text-muted">
+                                    Loan Account
+                                </div>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <field name="loan_account"/>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 ">
+                            <div class="o_setting_left_pane">
+                                <label for="loan_journal"/>
+                                <div class="text-muted">
+                                    Loan Journal
+                                </div>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <field name="loan_journal"/>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
