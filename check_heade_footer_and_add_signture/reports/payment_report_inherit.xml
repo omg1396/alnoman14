@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <template id="report_payment_receipt_document_inherit" inherit_id="account.report_payment_receipt_document">
+        <xpath expr="//div[hasclass('page')]/h3" position="before">
+            <t t-if="o.payment_type == 'outbound'">
+                <h3 class="text_center">إيصال دفع</h3>
+            </t>
+            <t t-else="">
+                <h3 class="text_center">إيصال قبض</h3>
+            </t>
+        </xpath>
         <xpath expr="//div[hasclass('page')]/table" position="after">
             <div class="last-page" style="position:relative;top:50px;font-size:12px;margin-top:0;">
                 <table style="border:none;">
                     <tr style="border:none;">
                         <th style="line-height: 1.6;border:none;" width="75%">
                             <strong style="position:relative;left:155px;">:التوقيع</strong>
-                            <br/><br/><br/>
+                            <br/>
+                            <br/>
+                            <br/>
                             ...................................................................
                         </th>
                         <th style="text-align:right;border:none;position:relative;left:70px;" width="25%">
                             <strong>:الأسم</strong>
-                            <br/><br/><br/>
+                            <br/>
+                            <br/>
+                            <br/>
                             ...................................................................
                         </th>
                     </tr>

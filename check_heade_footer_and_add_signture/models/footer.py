@@ -14,7 +14,6 @@ class AccountMove(models.Model):
     is_without_footer_header = fields.Boolean("Without Footer And Header")
 
 
-
 class AccountPayment(models.Model):
     _inherit = 'account.payment'
 
