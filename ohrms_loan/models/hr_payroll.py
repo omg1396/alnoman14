@@ -35,3 +35,10 @@ class Hrpayslip(models.Model):
                         if date_from <= loan_line.date <= date_to and not loan_line.paid and line.amount == loan_line.amount:
                             loan_line.paid = True
         return super(Hrpayslip, self).action_payslip_done()
+
+
+    def _compute_basic_net(self):
+        for payslip in self:
+            payslip.basic_wage = payslip._get_salary_line_total('BASIC')
+            payslip.net_wage = payslip._get_salary_line_total('NETSALARY')
+
